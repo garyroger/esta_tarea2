@@ -1,0 +1,88 @@
+\documentclass[conference]{IEEEtran}
+
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{amsmath} % assumes amsmath package installed
+\usepackage{amssymb} 
+\usepackage{array}
+
+\usepackage{blindtext}
+\usepackage{color}
+
+\usepackage[colorlinks=true, linkcolor=blue, citecolor=red, urlcolor=magenta]{hyperref}
+\usepackage[all]{hypcap}
+\usepackage{float} %para forzar tablas
+
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\@eqnnum}{\hb@xt@.01\p@}{\hypertarget{equation.\theequation}{}}{}{}
+\makeatother
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+\usepackage{mwe}
+\usepackage{fancyhdr}
+\fancypagestyle{firststyle}
+{
+	\fancyhf[C]{\fontsize{8}{10} \selectfont \textit{} }
+	\fancyfoot[C]{}
+}
+
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+\begin{document}
+%
+% paper title
+% Titles are only capitalized in the first letter.
+% Linebreaks \\ can be used within to get better formatting as desired.
+% Do not put math or special symbols in the title.
+\title{Análisis de estados asumidos, rizo pequeño y cálculo de parámetros RL de un convertidor zeta}
+
+\author{\IEEEauthorblockN{José de Jesús Reyes Ramírez \\ Isaac Antonio Torres Ruelas}
+	\IEEEauthorblockA{\textit{Universidad de Guadalajara, CUCEI} \\
+		\textit{Maestría en Ciencias en Ingeniería Eléctrica}\\
+		Guadalajara, Jalisco, México \\
+		jose.reyes0963@alumnos.udg.mx \\ isaac.torres8396@alumnos.udg.mx}
+}
+
+\maketitle
+
+\thispagestyle{firststyle}
+\renewcommand{\headrulewidth}{0in}
+\pagestyle{empty}
+
+\pagestyle{fancy}
+\chead{\fontsize{8}{10} \selectfont \textit{} }
+\pagenumbering{gobble}
+
+% As a general rule, do not put math, special symbols or citations
+% in the abstract
+
+\begin{abstract}
+	En el presente se muestra el análisis, cálculo de parámetros y simulación de un convertidor tipo zeta, el cual es un convertidor DC-DC que permite obtener una tensión tanto mayor como menor que la de entrada, manteniendo la misma polaridad. Se presenta el análisis de los estados asumidos y el análisis mediante la aproximación de  rizo pequeño  y el balance voltios-segundos y amperios-segundos del estado estacionario periódico (PSS) para el cálculo de los parámetros de los elementos de filtrado. Para la validación de resultados obtenidos de la aproximación de rizo pequeño se emplea el software PSIM, donde se simulan los resultados para verificar la precisión del análisis.
+\end{abstract}
+
+%\IEEEpeerreviewmaketitle
+
+\section{Introducción}
+\vspace{-4pt}
+En este trabajo, analizaremos el comportamiento de un convertidor de corriente directa a corriente directa (cd-cd) para determinar los parámetros de filtrado necesarios para su correcto funcionamiento. Utilizaremos herramientas analíticas como la aproximación de rizo pequeño y los balances de voltios-segundos y amperios-segundos en estado estacionario periódico. Además, emplearemos el simulador PSIM para verificar los resultados obtenidos.
+El objetivo principal es derivar la relación de conversión de voltaje y calcular los parámetros de los elementos de filtrado, como inductores y condensadores. Para ello, analizaremos las formas de onda de voltaje y corriente en estos componentes, considerando las pendientes correspondientes durante los subintervalos de encendido y apagado del convertidor.
+
+
+
+dfagf
+
+
+
+
+\section{Conclusiones}
+Se concluye que 
+
+\begin{thebibliography}{plain}
+\bibitem{b1} M. H. Rashid, Power Electronics: Devices, Circuits \& Applications, Pearson Education, 2013.
+\bibitem{b2} Mohan N., Undeland T. M., Robbins W. P. (2002) Power Electronics: Converters, Applications, and Design, Wiley.
+\end{thebibliography}
+
+\end{document}
