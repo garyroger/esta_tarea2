@@ -191,7 +191,6 @@ set(groot, ...
   'defaultLegendColor','w', ...
   'defaultLegendTextColor','k');
 
-
 % tamanos y grosores recomendados
 fs_ax   = 9;     % fuente de ejes (ieee single column)
 fs_lbl  = 10;    % fuente de etiquetas
@@ -212,58 +211,6 @@ ylim([0.8 1.05]);
 xlabel("tiempo [s]");
 ylabel('$V_t$ [pu]');
 
-% x1_vf = [25 25.2];
-% h1_vf = [0.96 interp1(t, v_t, 25.2)];
-% 
-% x2_vf = [25 25.006];
-% h2_vf = [0.9775 interp1(t, v_t, 25.006)];
-
-
-% % graficar los puntos
-% scatter([x1_vf x2_vf], [h1_vf h2_vf], 25, 'r', 'filled') % puntos rojos
-% 
-% % unir con línea punteada
-% plot(x1_vf, h1_vf, '--r', 'LineWidth', 0.75)
-% plot(x2_vf, h2_vf, '--r', 'LineWidth', 0.75)
-% 
-% % horizontal en v_t = 0.96 con etiqueta
-% yline(0.87,'--','h = 0.87', ...
-%     'LabelHorizontalAlignment','left','LabelVerticalAlignment','top',"Color","k","FontName","Times New Roman","FontSize",10);
-% yline(h1_vf(1),'--','h_1 = 0.96', ...
-%     'LabelHorizontalAlignment','left','LabelVerticalAlignment','bottom',"Color","k","FontName","Times New Roman","FontSize",10);
-% yline(h2_vf(1),'--','h_2 = 0.9775', ...
-%     'LabelHorizontalAlignment','left','LabelVerticalAlignment','top',"Color","k","FontName","Times New Roman","FontSize",10);
-% xlabel("tiempo [s]");
-% ylabel('$v_t$ [pu]');
-% xlim([23 32]);
-% ylim([0.85 1.03]);
-% 
-% t0 = 24.98;   % inicio del zoom
-% t1 = 25.1;  % fin del zoom
-% 
-% idx_band = (t >= t0) & (t <= t1);
-% 
-% axes(gca);
-% %rectangle('Position',[t0 ymin (t1-t0) (ymax-ymin)], 'EdgeColor','k','LineStyle',':','LineWidth',2);
-% 
-% ax_inset = axes('Position',[0.55 0.48 0.3 0.4]); % [x y ancho alto] en %
-% box(ax_inset,'on'); hold(ax_inset,'on');
-% ymin = 0.95;
-% ymax = 1.01;
-% plot(ax_inset, t(idx_band), v_t(idx_band),'LineWidth',1.2);
-% grid(ax_inset,'on');
-% ax_inset.XTickLabel = [];
-% ax_inset.YTickLabel = [];
-% % graficar los puntos
-% scatter([x1_vf x2_vf], [h1_vf h2_vf], 20, 'r', 'filled') % puntos rojos
-% % unir con línea punteada
-% plot(x1_vf, h1_vf, '--r', 'LineWidth', 0.75)
-% plot(x2_vf, h2_vf, '--r', 'LineWidth', 0.75)
-% 
-% xlim(ax_inset, [t0 t1]);
-% ylim(ax_inset, [ymin ymax]);
-
-
 %----------------- figura 4 ---------------------
 f4 = figure(4); clf
 axes(gca);
@@ -275,11 +222,7 @@ ylim([0.99 1.005]);
 xlabel("tiempo [s]");
 ylabel('$W_r$ [pu]');
 
-% 
-% 
-% exportgraphics(f1,'fig1.pdf','ContentType','vector','BackgroundColor','white');
-% exportgraphics(f2,'fig2.pdf','ContentType','vector','BackgroundColor','white');
-
+%----------------- figura 5 ---------------------
 f5 = figure(5); clf
 axes(gca);
 set(f5,'Units','inches','Position',[1 1 fig_w fig_h],'PaperPositionMode','auto');
@@ -336,3 +279,68 @@ ylim(ax_inset, [ymin ymax]);
 exportgraphics(f3,'fig3.pdf','ContentType','vector','BackgroundColor','white');
 exportgraphics(f4,'fig4.pdf','ContentType','vector','BackgroundColor','white');
 exportgraphics(f5,'fig5.pdf','ContentType','vector','BackgroundColor','white');
+
+%%
+vt_sen_array = out.vt_sen;
+t  = vt_sen_array.Time;
+vt_sen = vt_sen_array.Data;
+
+vt_cos_array = out.vt_cos;
+vt_cos = vt_cos_array.Data;
+
+%%
+% ===== estilo ieee para graficas =====
+% setea fuentes y estilos por defecto (solo una vez por sesion)
+set(groot,'defaulttextinterpreter','latex');
+set(groot,'defaultaxesTickLabelInterpreter','latex');
+set(groot,'defaultlegendInterpreter','latex');
+set(groot,'defaultAxesFontName','Times New Roman');
+set(groot,'defaultTextFontName','Times New Roman');
+set(groot, ...
+  'defaultFigureColor','w', ...          % fondo figura
+  'defaultAxesColor','w', ...            % fondo axes
+  'defaultAxesXColor','k', ...
+  'defaultAxesYColor','k', ...
+  'defaultAxesZColor','k', ...
+  'defaultAxesGridColor',[0.8 0.8 0.8], ...
+  'defaultAxesGridAlpha',0.6, ...
+  'defaultAxesLineWidth',1, ...
+  'defaultLineLineWidth',1.25, ...
+  'defaultTextColor','k', ...
+  'defaultLegendColor','w', ...
+  'defaultLegendTextColor','k');
+
+% tamanos y grosores recomendados
+fs_ax   = 9;     % fuente de ejes (ieee single column)
+fs_lbl  = 10;    % fuente de etiquetas
+fs_legend = 9;   % fuente de la leyenda
+lw_main = 1.2;   % grosor de linea
+ms_main = 5;     % tamano de marcador
+
+% tamano de figura en pulgadas (single column ~ 5.5in x 2in)
+fig_w = 5.5; fig_h = 2;
+%----------------- figura 6 ---------------------
+f6 = figure(6); clf;
+axes(gca);
+set(f6,'Units','inches','Position',[1 1 fig_w fig_h],'PaperPositionMode','auto');
+plot(t,vt_sen,"LineWidth",1.5); 
+grid on;
+xlim([24.9 25.5]);
+%ylim([10^(-0.1) 10^(0.1)]);
+xlabel("tiempo [s]");
+ylabel('$v_t \sin(\delta)$ [pu]');
+
+%----------------- figura 7 ---------------------
+f7 = figure(7); clf
+axes(gca);
+set(f7,'Units','inches','Position',[1 1 fig_w fig_h],'PaperPositionMode','auto');
+plot(t, vt_cos, 'LineWidth',1.5);
+grid on;
+xlim([24.9 25.5]);
+ylim([10^(-0.1) 10^(0.1)]);
+xlabel("tiempo [s]");
+ylabel('$v_t \cos(\delta)$ [pu]');
+
+% exportgraphics(f6,'fig6.pdf','ContentType','vector','BackgroundColor','white');
+% exportgraphics(f7,'fig7.pdf','ContentType','vector','BackgroundColor','white');
+
