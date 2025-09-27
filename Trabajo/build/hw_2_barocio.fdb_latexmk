@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1759003715.91922 "c:/Users/jesus/OneDrive/Escritorio/Latex Vs Code Papers/esta_tarea2/Trabajo/hw_2_barocio.tex" "build/hw_2_barocio.pdf" "hw_2_barocio" 1759003716.78233 0
+["pdflatex"] 1759010112.9881 "c:/Users/jesus/OneDrive/Escritorio/Latex Vs Code Papers/esta_tarea2/Trabajo/hw_2_barocio.tex" "build/hw_2_barocio.pdf" "hw_2_barocio" 1759010113.88027 0
   "C:/Users/jesus/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1759001311 85289 ac562416368bc41a6ee070badc276572 ""
   "C:/Users/jesus/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1733938404 10788011 b5de51927d8092691bee66b8a7a08d40 ""
   "C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -112,10 +112,10 @@
   "C:/Users/jesus/AppData/Local/Programs/MiKTeX/tex/latex/tools/xspace.sty" 1654690828 4545 4c279ac9292a1be8afa9ab2f1d3299c2 ""
   "C:/Users/jesus/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "IEEEtran.cls" 1758927788 288304 5b2e4fa15b0f7eabb840ebf67df4c0f7 ""
-  "build/hw_2_barocio.aux" 1759003716 896 d7605252850b75d04a5495e5c98c9e2d "pdflatex"
-  "build/hw_2_barocio.out" 1759003716 303 85f71c83881bb54c90b7c4ca599d9110 "pdflatex"
-  "c:/Users/jesus/OneDrive/Escritorio/Latex Vs Code Papers/esta_tarea2/Trabajo/hw_2_barocio.tex" 1759003715 3073 2651ed0b913ca16c6d2211be29d6b1d1 ""
-  "hw_2_barocio.tex" 1759003715 3073 2651ed0b913ca16c6d2211be29d6b1d1 ""
+  "build/hw_2_barocio.aux" 1759010113 1669 a4bec95894fc4be0d703c8a70f21f1ba "pdflatex"
+  "build/hw_2_barocio.out" 1759010113 1800 99c6b58b393df4208572a9e39e4bd29b "pdflatex"
+  "c:/Users/jesus/OneDrive/Escritorio/Latex Vs Code Papers/esta_tarea2/Trabajo/hw_2_barocio.tex" 1759010112 5072 f8a39b2ee9c49e06d2a87d3325b9381f ""
+  "hw_2_barocio.tex" 1759010112 5072 f8a39b2ee9c49e06d2a87d3325b9381f ""
   (generated)
   "build/hw_2_barocio.aux"
   "build/hw_2_barocio.log"

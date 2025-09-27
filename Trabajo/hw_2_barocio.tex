@@ -71,9 +71,32 @@ Guadalajara, Jalisco, México \\
 \section{Introducción}
 El generador síncrono es \dots
 
+\section{Parámetros del generador síncrono}
+
 Los parámetros fundamentales del generador síncrono son: $r_s$, $r_{fd}$, $r_{kd}$, $r_{kq1}$, $r_{kq2}$, $x_{Ls}$, $x_{1fd}$, $x_{lkd}$, $x_{lkq1}$, $x_{lkq2}$, $x_{md}$ y $x_{mq}$. Los cuales se calculan usando relaciones matemáticas.
 
 Los parámetros estándar del generador síncrono son las reactancias síncronas, las reactancias síncronas transitorias, las reactancias síncronas subtransitorias, las constantes de tiempo transitorias y subtransitorias en circuito abierto y las constantes de tiempo transitorias y subtransitorias en cortocircuito; es decir, $x_d$, $x_q$, $x^{'}_d$, $x^{'}_q$, $x^{''}_d$, $x^{''}_q$, $T^{'}_{do}$, $T^{'}_{qo}$, $T^{''}_{do}$, $T^{''}_{qo}$, $T^{'}_{d}$, $T^{'}_{q}$, $T^{''}_{d}$, $T^{''}_{q}$.
+
+La identificación de sus parámetros de estado permanente y transitorio es muy importante para el análisis de estabilidad, esto debido a \dots
+
+Existen principalmente 2 pruebas para la determinación de parámetros de un generador síncrono, los cuales han obtenido importancia debido al bajo nivel de riesgo y a su facilidad, los cuales son el método de respuesta en frecuencia y el método de rechazo de carga.
+
+La prueba de respuesta en frecuencia consiste en aplicar una corriente con frecuencias que varíen en el rango de 0.001 Hz a 1 kHz, la cual es aproximadamente del \% de la corriente nominal. Usando los datos de la respuesta en frecuencia obtenidos de la prueba se determinan parámetros estándar de la máquina, es decir, las constantes de tiempo y las reactancias sincronas, transitorias y subtransitorias de los ejes directo y en cuadratura.
+
+El método de rechazo de carga consiste en realizar pruebaas de rechazo de carga en dos puntos operativos, donde las componentes de corriente sólo existan en el eje de interés. La prueba en el eje directo se realiza subexcitando el generador, por lo que debe estar consumiendo potencia reactiva de la red y la potencia activa debe ser despreciable, debido a la excitación insuficiente. Lo cual garantiza la obtención de parámetros no saturados y evita sobretensiones indeseadas durante la prueba. Los datos que permite obtener la prueba en el eje directo son $x_d$, $x^{'}_d$, $x^{''}_d$, $T^{'}_{do}$ y $T^{''}_{do}$.
+
+La prueba en el eje de cuadratura se realiza encontrando un punto de carga en el cual el valor absoluto del ángulo del factor de potencia sea igual al ángulo de potencia, esto con el generador subexcitado.
+
+
+
+ 
+\section{Pruebas de rechazo de carga en el generador síncrono de polos salientes}
+
+\subsection{Prueba de rechazo de carga en el eje d}
+
+\subsection{Prueba de rechazo de carga en el eje q}
+
+\subsection{Prueba de rechazo de carga en eje arbitrario}
 
 
 
@@ -82,7 +105,7 @@ Los parámetros estándar del generador síncrono son las reactancias síncronas
 Se concluye que 
 
 \begin{thebibliography}{plain}
-\bibitem{b1} M. H. Rashid, Power Electronics: Devices, Circuits \& Applications, Pearson Education, 2013.
+\bibitem{b1} P. Kundur, Power system stability and control. USA: McGraw-Hill, 1994. 
 \bibitem{b2} Mohan N., Undeland T. M., Robbins W. P. (2002) Power Electronics: Converters, Applications, and Design, Wiley.
 \end{thebibliography}
 

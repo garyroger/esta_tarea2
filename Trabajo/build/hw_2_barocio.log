@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2024.12.11)  27 SEP 2025 14:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2024.12.11)  27 SEP 2025 15:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -474,23 +474,22 @@ Before submitting the final camera ready copy, remember to:
 [1{C:/Users/jesus/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
 
-
 ] (c:\Users\jesus\OneDrive\Escritorio\Latex Vs Code Papers\esta_tarea2\Trabajo\build\hw_2_barocio.aux)
 Package rerunfilecheck Info: File `hw_2_barocio.out' has not changed.
-(rerunfilecheck)             Checksum: 85F71C83881BB54C90B7C4CA599D9110;303.
+(rerunfilecheck)             Checksum: 99C6B58B393DF4208572A9E39E4BD29B;1800.
  ) 
 Here is how much of TeX's memory you used:
- 11838 strings out of 475385
- 195179 string characters out of 2776906
- 629276 words of memory out of 3000000
- 33035 multiletter control sequences out of 15000+600000
+ 11848 strings out of 475385
+ 195309 string characters out of 2776906
+ 639280 words of memory out of 3000000
+ 33040 multiletter control sequences out of 15000+600000
  507296 words of font info for 110 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 87i,14n,91p,616b,443s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 87i,14n,91p,739b,443s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "c:\Users\jesus\OneDrive\Escritorio\Latex Vs Code Papers\esta_tarea2\Trabajo\build\hw_2_barocio.pdf" (1 page, 101767 bytes).
+Output written on "c:\Users\jesus\OneDrive\Escritorio\Latex Vs Code Papers\esta_tarea2\Trabajo\build\hw_2_barocio.pdf" (1 page, 109942 bytes).
 PDF statistics:
- 74 PDF objects out of 1000 (max. 8388607)
- 7 named destinations out of 1000 (max. 500000)
- 25 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 94 PDF objects out of 1000 (max. 8388607)
+ 12 named destinations out of 1000 (max. 500000)
+ 65 words of extra memory for PDF output out of 10000 (max. 10000000)
 
