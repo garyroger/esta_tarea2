@@ -2,16 +2,16 @@
 
 \usepackage{graphicx}
 \usepackage{subfigure}
-\usepackage{amsmath} % assumes amsmath package installed
+\usepackage{amsmath}
 \usepackage{amssymb} 
 \usepackage{array}
 
 \usepackage{blindtext}
 \usepackage{color}
 
-\usepackage[colorlinks=true, linkcolor=blue, citecolor=red, urlcolor=magenta]{hyperref}
+\usepackage[colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue]{hyperref}
 \usepackage[all]{hypcap}
-\usepackage{float} %para forzar tablas
+\usepackage{float}
 
 \usepackage{etoolbox}
 \makeatletter
@@ -29,22 +29,30 @@
 	\fancyfoot[C]{}
 }
 
-\hyphenation{op-tical net-works semi-conduc-tor}
+%\hyphenation{ }
 
 \begin{document}
-%
-% paper title
-% Titles are only capitalized in the first letter.
-% Linebreaks \\ can be used within to get better formatting as desired.
-% Do not put math or special symbols in the title.
-\title{Análisis de estados asumidos, rizo pequeño y cálculo de parámetros RL de un convertidor zeta}
 
-\author{\IEEEauthorblockN{José de Jesús Reyes Ramírez \\ Isaac Antonio Torres Ruelas}
-	\IEEEauthorblockA{\textit{Universidad de Guadalajara, CUCEI} \\
-		\textit{Maestría en Ciencias en Ingeniería Eléctrica}\\
-		Guadalajara, Jalisco, México \\
-		jose.reyes0963@alumnos.udg.mx \\ isaac.torres8396@alumnos.udg.mx}
+% Do not put math or special symbols in the title.
+\title{Determinación de parametros del generador síncrono usando pruebas de simulación de rechazo de carga}
+
+
+\author{
+\IEEEauthorblockN{José de Jesús Reyes Ramírez\IEEEauthorrefmark{1},
+Yosniel\IEEEauthorrefmark{2},
+Luis\IEEEauthorrefmark{3},
+Gary\IEEEauthorrefmark{4},
+Aylem\IEEEauthorrefmark{5}}
+\IEEEauthorblockA{\textit{Universidad de Guadalajara, CUCEI} \\
+\textit{Maestría en Ciencias en Ingeniería Eléctrica} \\
+Guadalajara, Jalisco, México \\
+\IEEEauthorrefmark{1}jose.reyes0963@alumnos.udg.mx,
+\IEEEauthorrefmark{2}@alumnos.udg.mx,
+\IEEEauthorrefmark{3}@alumnos.udg.mx,
+\IEEEauthorrefmark{4}a@alumnos.udg.mx,
+\IEEEauthorrefmark{5}@alumnos.udg.mx}
 }
+
 
 \maketitle
 
@@ -56,23 +64,16 @@
 \chead{\fontsize{8}{10} \selectfont \textit{} }
 \pagenumbering{gobble}
 
-% As a general rule, do not put math, special symbols or citations
-% in the abstract
-
 \begin{abstract}
-	En el presente se muestra el análisis, cálculo de parámetros y simulación de un convertidor tipo zeta, el cual es un convertidor DC-DC que permite obtener una tensión tanto mayor como menor que la de entrada, manteniendo la misma polaridad. Se presenta el análisis de los estados asumidos y el análisis mediante la aproximación de  rizo pequeño  y el balance voltios-segundos y amperios-segundos del estado estacionario periódico (PSS) para el cálculo de los parámetros de los elementos de filtrado. Para la validación de resultados obtenidos de la aproximación de rizo pequeño se emplea el software PSIM, donde se simulan los resultados para verificar la precisión del análisis.
+	En el presente se muestra como obtener los parámetros estándar del generador síncrono a partir simulaciones de pruebas de rechazo de carga en Matlab/Simulink.
 \end{abstract}
 
-%\IEEEpeerreviewmaketitle
-
 \section{Introducción}
-\vspace{-4pt}
-En este trabajo, analizaremos el comportamiento de un convertidor de corriente directa a corriente directa (cd-cd) para determinar los parámetros de filtrado necesarios para su correcto funcionamiento. Utilizaremos herramientas analíticas como la aproximación de rizo pequeño y los balances de voltios-segundos y amperios-segundos en estado estacionario periódico. Además, emplearemos el simulador PSIM para verificar los resultados obtenidos.
-El objetivo principal es derivar la relación de conversión de voltaje y calcular los parámetros de los elementos de filtrado, como inductores y condensadores. Para ello, analizaremos las formas de onda de voltaje y corriente en estos componentes, considerando las pendientes correspondientes durante los subintervalos de encendido y apagado del convertidor.
+El generador síncrono es \dots
 
+Los parámetros fundamentales del generador síncrono son: $r_s$, $r_{fd}$, $r_{kd}$, $r_{kq1}$, $r_{kq2}$, $x_{Ls}$, $x_{1fd}$, $x_{lkd}$, $x_{lkq1}$, $x_{lkq2}$, $x_{md}$ y $x_{mq}$. Los cuales se calculan usando relaciones matemáticas.
 
-
-dfagf
+Los parámetros estándar del generador síncrono son las reactancias síncronas, las reactancias síncronas transitorias, las reactancias síncronas subtransitorias, las constantes de tiempo transitorias y subtransitorias en circuito abierto y las constantes de tiempo transitorias y subtransitorias en cortocircuito; es decir, $x_d$, $x_q$, $x^{'}_d$, $x^{'}_q$, $x^{''}_d$, $x^{''}_q$, $T^{'}_{do}$, $T^{'}_{qo}$, $T^{''}_{do}$, $T^{''}_{qo}$, $T^{'}_{d}$, $T^{'}_{q}$, $T^{''}_{d}$, $T^{''}_{q}$.
 
 
 
