@@ -75,7 +75,44 @@ Los parámetros fundamentales del generador síncrono son: $r_s$, $r_{fd}$, $r_{
 
 Los parámetros estándar del generador síncrono son las reactancias síncronas, las reactancias síncronas transitorias, las reactancias síncronas subtransitorias, las constantes de tiempo transitorias y subtransitorias en circuito abierto y las constantes de tiempo transitorias y subtransitorias en cortocircuito; es decir, $x_d$, $x_q$, $x^{'}_d$, $x^{'}_q$, $x^{''}_d$, $x^{''}_q$, $T^{'}_{do}$, $T^{'}_{qo}$, $T^{''}_{do}$, $T^{''}_{qo}$, $T^{'}_{d}$, $T^{'}_{q}$, $T^{''}_{d}$, $T^{''}_{q}$.
 
+\section{Pruebas de Rechazo de Carga para Determinación de Parámetros de Generadores Síncronos} 
 
+Las pruebas de rechazo de carga constituyen una metodología estandarizada según las normas IEEE 115
+para la determinación experimental de los parámetros operativos de generadores síncronos. Estas pruebas
+se realizan mediante la desconexión brusca del generador del sistema de potencia, manteniendo constante
+la tensión de campo y registrando la respuesta transitoria de las variables eléctricas.
+
+\subsection{Prueba de rechazo de carga en el eje directo $-d-$}
+
+Esta prueba se ejecuta con el generador entregando potencia activa nula y potencia reactiva máxima,
+condiciones bajo las cuales la corriente de armadura se alinea exclusivamente con el eje directo.
+Durante el rechazo de carga, se registra el decaimiento transitorio de la tensión terminal, cuyo análisis
+permite determinar las reactancias síncrona, transitoria y subtransitoria del eje directo ($x_d, x^{'}_d, x^{''}_d$) así como las constantes
+de tiempo en circuito abierto ($T^{'}_{qo}$, $T^{''}_{do}$)
+
+\subsection{Prueba de rechazo de carga en el eje en cuadratura $-q-$}
+
+Para esta prueba, se ajusta la operación del generador de modo que el ángulo de potencia coincida con el ángulo del factor de potencia,
+logrando que la corriente de armadura posea únicamente componente en cuadratura. El análisis del transitorio de tensión resultante del
+rechazo de carga permite calcular la reactancia síncrona y subtransitoria del eje $q$ ($x_q, x^{''}_q$)
+
+\subsection{Prueba de rechazo de carga en el eje arbitrario}
+
+Esta prueba representa la metodología más comprehensiva, ya que se realiza con el generador operando en condiciones de carga arbitrarias,
+con componentes de corriente tanto en el eje directo como en cuadratura. El procesamiento de la respuesta transitoria, particularmente de
+la componente en cuadratura de la tensión y corriente, permite determinar el conjunto completo de parámetros del eje q 
+($x_q, x^{'}_q, x^{''}_q$, T^{'}_{qo}$, $T^{''}_{do}$)
+
+
+Para realizar las diferentes pruebas para obtener los parámetros del generador se utilizó
+como base el esquema mostrado en la Fig. \ref{fig:Modelo_Simulink}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{Fig/Modelo_Simulink.pdf}
+    \caption{Modelo base implementado en Simulink}
+    \label{fig:Modelo_Simulink}
+\end{figure}
 
 
 \section{Conclusiones}
