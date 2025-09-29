@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1759189219.74433 "g:/My Drive/Nube/Documentos/MCIE/2025B/Analisis de Estabilidad/tarea 2/Trabajo/hw_2_barocio.tex" "build/hw_2_barocio.pdf" "hw_2_barocio" 1759189220.90037 0
+["pdflatex"] 1759189724.02652 "g:/My Drive/Nube/Documentos/MCIE/2025B/Analisis de Estabilidad/tarea 2/Trabajo/hw_2_barocio.tex" "build/hw_2_barocio.pdf" "hw_2_barocio" 1759189725.0816 0
   "C:/Users/garyr/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1759175785 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/garyr/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1754416732 24225045 3a470790f2ce07baecef6f229243408a ""
   "C:/Users/garyr/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -120,15 +120,13 @@
   "C:/Users/garyr/AppData/Local/Programs/MiKTeX/tex/latex/tools/tabularx.sty" 1700599895 7147 d45559f8a31b8c53ada0640516660003 ""
   "C:/Users/garyr/AppData/Local/Programs/MiKTeX/tex/latex/tools/xspace.sty" 1700599895 4545 9f5ea23ab1c91476c42749893f790666 ""
   "C:/Users/garyr/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "Fig/Modelo_Simulink.pdf" 1759179182 29932 dd10c89d606511d6c5fd3ad2347bf323 ""
+  "Fig/Modelo_Simulink.pdf" 1759189616 30567 4ed3eea5ec156bece7e13b2b866c5617 ""
   "Fig/fig1.pdf" 1759164230 58099 46156f7a6369f06969ce15c1eb7e9faf ""
-  "Fig/fig2.pdf" 1759164230 34774 31b015471b25a3d93516ecdced9f77fc ""
-  "Fig/fig3.pdf" 1759164252 24219 3c5c8c633a6f347749f89ecf7b439b3e ""
   "IEEEtran.cls" 1758928532 288304 5b2e4fa15b0f7eabb840ebf67df4c0f7 ""
-  "build/hw_2_barocio.aux" 1759189220 2970 1362f21c89330fbe4114a790b3bcdd59 "pdflatex"
-  "build/hw_2_barocio.out" 1759189220 3071 0792e9cf1793ee9e41983eaa7c4a4c03 "pdflatex"
-  "g:/My Drive/Nube/Documentos/MCIE/2025B/Analisis de Estabilidad/tarea 2/Trabajo/hw_2_barocio.tex" 1759189218 8743 4a881ae297f80ee4989c68b8efd3cdee ""
-  "hw_2_barocio.tex" 1759189218 8743 4a881ae297f80ee4989c68b8efd3cdee ""
+  "build/hw_2_barocio.aux" 1759189724 2524 6bafc63c785de6acf6b99e2ce0c735d4 "pdflatex"
+  "build/hw_2_barocio.out" 1759189724 3071 0792e9cf1793ee9e41983eaa7c4a4c03 "pdflatex"
+  "g:/My Drive/Nube/Documentos/MCIE/2025B/Analisis de Estabilidad/tarea 2/Trabajo/hw_2_barocio.tex" 1759189722 8387 0c212c35e7a4c75abfde65b88a290264 ""
+  "hw_2_barocio.tex" 1759189722 8387 0c212c35e7a4c75abfde65b88a290264 ""
   (generated)
   "build/hw_2_barocio.aux"
   "build/hw_2_barocio.log"

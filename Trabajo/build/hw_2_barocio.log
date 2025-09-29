@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.8.5)  29 SEP 2025 17:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.8.5)  29 SEP 2025 17:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -520,11 +520,11 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 pdfTeX warning: pdflatex (file ./Fig/Modelo_Simulink.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Fig/Modelo_Simulink.pdf, id=52, 1090.0725pt x 387.69844pt>
+<Fig/Modelo_Simulink.pdf, id=52, 1047.915pt x 307.90031pt>
 File: Fig/Modelo_Simulink.pdf Graphic file (type pdf)
 <use Fig/Modelo_Simulink.pdf>
 Package pdftex.def Info: Fig/Modelo_Simulink.pdf  used on input line 112.
-(pdftex.def)             Requested size: 252.0pt x 89.62427pt.
+(pdftex.def)             Requested size: 252.0pt x 74.04321pt.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 117.
@@ -536,13 +536,8 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 <Fig/fig1.pdf, id=54, 348.30125pt x 137.51375pt>
 File: Fig/fig1.pdf Graphic file (type pdf)
 <use Fig/fig1.pdf>
-Package pdftex.def Info: Fig/fig1.pdf  used on input line 127.
+Package pdftex.def Info: Fig/fig1.pdf  used on input line 129.
 (pdftex.def)             Requested size: 252.0pt x 99.49242pt.
-<Fig/fig2.pdf, id=55, 353.32pt x 140.525pt>
-File: Fig/fig2.pdf Graphic file (type pdf)
-<use Fig/fig2.pdf>
-Package pdftex.def Info: Fig/fig2.pdf  used on input line 134.
-(pdftex.def)             Requested size: 252.0pt x 100.22801pt.
 [1{C:/Users/garyr/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/garyr/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
 
 
@@ -550,28 +545,23 @@ Package pdftex.def Info: Fig/fig2.pdf  used on input line 134.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.142 
+l.137 
        <./Fig/Modelo_Simulink.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 149.
+(hyperref)                removing `math shift' on input line 144.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 149.
+(hyperref)                removing `math shift' on input line 144.
 
-<Fig/fig3.pdf, id=78, 349.305pt x 140.525pt>
-File: Fig/fig3.pdf Graphic file (type pdf)
-<use Fig/fig3.pdf>
-Package pdftex.def Info: Fig/fig3.pdf  used on input line 153.
-(pdftex.def)             Requested size: 252.0pt x 101.37947pt.
 
-Overfull \hbox (8.19511pt too wide) in paragraph at lines 170--170
+Overfull \hbox (8.19511pt too wide) in paragraph at lines 158--158
  []|\OT1/ptm/b/n/8 Parametro| 
  []
 
 
-Overfull \hbox (9.33086pt too wide) in paragraph at lines 174--174
+Overfull \hbox (9.33086pt too wide) in paragraph at lines 162--162
  []|\OT1/ptm/b/n/8 Calculados| 
  []
 
@@ -590,28 +580,18 @@ Before submitting the final camera ready copy, remember to:
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.208 \end{document}
+l.196 \end{document}
                      [2
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.208 \end{document}
-                    
-pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.208 \end{document}
-                    
-pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.208 \end{document}
+l.196 \end{document}
                     
 pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.208 \end{document}
-                     <./Fig/fig1.pdf> <./Fig/fig2.pdf> <./Fig/fig3.pdf>] (g:\My Drive\Nube\Documentos\MCIE\2025B\Analisis de Estabilidad\tarea 2\Trabajo\build\hw_2_barocio.aux)
+l.196 \end{document}
+                     <./Fig/fig1.pdf>] (g:\My Drive\Nube\Documentos\MCIE\2025B\Analisis de Estabilidad\tarea 2\Trabajo\build\hw_2_barocio.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -620,17 +600,17 @@ Package rerunfilecheck Info: File `hw_2_barocio.out' has not changed.
 (rerunfilecheck)             Checksum: 0792E9CF1793EE9E41983EAA7C4A4C03;3071.
  ) 
 Here is how much of TeX's memory you used:
- 12140 strings out of 474486
- 198421 string characters out of 5743756
- 1955542 words of memory out of 5000000
- 34219 multiletter control sequences out of 15000+600000
+ 12122 strings out of 474486
+ 198073 string characters out of 5743756
+ 1954542 words of memory out of 5000000
+ 34203 multiletter control sequences out of 15000+600000
  598937 words of font info for 121 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,14n,107p,638b,450s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,14n,107p,638b,448s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/garyr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/garyr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/garyr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/garyr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/garyr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/garyr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/garyr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/garyr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/garyr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/garyr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/garyr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/garyr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/garyr/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/garyr/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/garyr/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/garyr/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "g:\My Drive\Nube\Documentos\MCIE\2025B\Analisis de Estabilidad\tarea 2\Trabajo\build\hw_2_barocio.pdf" (2 pages, 330066 bytes).
+Output written on "g:\My Drive\Nube\Documentos\MCIE\2025B\Analisis de Estabilidad\tarea 2\Trabajo\build\hw_2_barocio.pdf" (2 pages, 271994 bytes).
 PDF statistics:
- 234 PDF objects out of 1000 (max. 8388607)
- 21 named destinations out of 1000 (max. 500000)
- 117 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 186 PDF objects out of 1000 (max. 8388607)
+ 19 named destinations out of 1000 (max. 500000)
+ 107 words of extra memory for PDF output out of 10000 (max. 10000000)
 
