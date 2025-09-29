@@ -5,10 +5,11 @@
 \usepackage{amsmath}
 \usepackage{amssymb} 
 \usepackage{array}
-
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{array,booktabs,tabularx}
 \usepackage{blindtext}
 \usepackage{color}
-
 \usepackage[colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue]{hyperref}
 \usepackage[all]{hypcap}
 \usepackage{float}
@@ -20,7 +21,6 @@
 
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
-
 \usepackage{mwe}
 \usepackage{fancyhdr}
 \fancypagestyle{firststyle}
@@ -29,6 +29,7 @@
 	\fancyfoot[C]{}
 }
 
+\newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}
 %\hyphenation{ }
 
 \begin{document}
@@ -101,7 +102,7 @@ rechazo de carga permite calcular la reactancia síncrona y subtransitoria del e
 Esta prueba representa la metodología más comprehensiva, ya que se realiza con el generador operando en condiciones de carga arbitrarias,
 con componentes de corriente tanto en el eje directo como en cuadratura. El procesamiento de la respuesta transitoria, particularmente de
 la componente en cuadratura de la tensión y corriente, permite determinar el conjunto completo de parámetros del eje q 
-($x_q, x^{'}_q, x^{''}_q$, T^{'}_{qo}$, $T^{''}_{do}$)
+($x_q, x^{'}_q, x^{''}_q, T^{'}_{qo}$, $T^{''}_{do}$)
 
 
 Para realizar las diferentes pruebas para obtener los parámetros del generador se utilizó
@@ -113,6 +114,42 @@ como base el esquema mostrado en la Fig. \ref{fig:Modelo_Simulink}
     \caption{Modelo base implementado en Simulink}
     \label{fig:Modelo_Simulink}
 \end{figure}
+
+\setlength{\extrarowheight}{2pt} % eleva todas las filas
+\begin{table}[ht]
+\centering
+\caption{Parametros en p.u.}
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{C{1cm} C{1cm} C{1cm} C{1cm} C{1cm} C{1.25cm}}
+\toprule
+\textbf{Parametro} &
+\textbf{Rechazo de carga en el eje directo} &
+\textbf{Rechazo de carga en el eje directo} &
+\textbf{Rechazo de carga en eje arbitrario} &
+\textbf{Calculados} & 
+\textbf{Valores de diseño} \\
+%\cmidrule(lr){5-6}
+%\multicolumn{1}{c}{} &
+%\multicolumn{1}{c}{\textbf{Load Rejection}} &
+%\multicolumn{1}{c}{\textbf{Load Rejection}} &
+%\multicolumn{1}{c}{\textbf{Load Rejection}} &
+%\textbf{Calculated} & \textbf{Design Values} \\
+\hline
+\midrule
+$T'_{do}$ & 3.8955 & --     & --     & --     & 3.7724 \\
+$T''_{do}$ & 0.0245 & --     & --     & --     & 0.0238 \\
+$T''_{qo}$ & --     & --     & 0.0333 & --     & 0.0334 \\
+$x_d$ & 1.0492 & --     & --     & --     & 1.0495 \\
+$x_q$ & --     & 0.6334 & 0.6224 & --     & 0.6313 \\
+$x'_d$ & 0.3257 & --     & --     & --     & 0.3320 \\
+$x''_d$ & 0.18 & --     & --     & --     & 0.1963 \\
+$x''_q$ & --     & 0.2489 & 0.1991 & --     & 0.2496 \\
+$T'_d$ & --     & --     & --     & 1.2093 & 1.1939 \\
+$T''_d$ & --     & --     & --     & 0.0135 & 0.0140 \\
+$T''_q$ & --     & --     & --     & 0.0131 & 0.0132 \\
+\bottomrule
+\end{tabular}
+\end{table}
 
 
 \section{Conclusiones}
