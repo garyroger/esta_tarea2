@@ -76,6 +76,17 @@ Los parámetros fundamentales del generador síncrono son: $r_s$, $r_{fd}$, $r_{
 
 Los parámetros estándar del generador síncrono son las reactancias síncronas, las reactancias síncronas transitorias, las reactancias síncronas subtransitorias, las constantes de tiempo transitorias y subtransitorias en circuito abierto y las constantes de tiempo transitorias y subtransitorias en cortocircuito; es decir, $x_d$, $x_q$, $x^{'}_d$, $x^{'}_q$, $x^{''}_d$, $x^{''}_q$, $T^{'}_{do}$, $T^{'}_{qo}$, $T^{''}_{do}$, $T^{''}_{qo}$, $T^{'}_{d}$, $T^{'}_{q}$, $T^{''}_{d}$, $T^{''}_{q}$.
 
+La identificación de sus parámetros de estado permanente y transitorio es muy importante para el análisis de estabilidad, esto debido a \dots
+
+Existen principalmente 2 pruebas para la determinación de parámetros de un generador síncrono, los cuales han obtenido importancia debido al bajo nivel de riesgo y a su facilidad, los cuales son el método de respuesta en frecuencia y el método de rechazo de carga.
+
+La prueba de respuesta en frecuencia consiste en aplicar una corriente con frecuencias que varíen en el rango de 0.001 Hz a 1 kHz, la cual es aproximadamente del \% de la corriente nominal. Usando los datos de la respuesta en frecuencia obtenidos de la prueba se determinan parámetros estándar de la máquina, es decir, las constantes de tiempo y las reactancias sincronas, transitorias y subtransitorias de los ejes directo y en cuadratura.
+
+El método de rechazo de carga consiste en realizar pruebaas de rechazo de carga en dos puntos operativos, donde las componentes de corriente sólo existan en el eje de interés. La prueba en el eje directo se realiza subexcitando el generador, por lo que debe estar consumiendo potencia reactiva de la red y la potencia activa debe ser despreciable, debido a la excitación insuficiente. Lo cual garantiza la obtención de parámetros no saturados y evita sobretensiones indeseadas durante la prueba. Los datos que permite obtener la prueba en el eje directo son $x_d$, $x^{'}_d$, $x^{''}_d$, $T^{'}_{do}$ y $T^{''}_{do}$.
+
+La prueba en el eje de cuadratura se realiza encontrando un punto de carga en el cual el valor absoluto del ángulo del factor de potencia sea igual al ángulo de potencia, esto con el generador subexcitado.
+
+
 \section{Pruebas de Rechazo de Carga para Determinación de Parámetros de Generadores Síncronos} 
 
 Las pruebas de rechazo de carga constituyen una metodología estandarizada según las normas IEEE 115

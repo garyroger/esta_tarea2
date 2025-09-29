@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1759188828.14261 "c:/Users/jesus/OneDrive/Escritorio/Latex Vs Code Papers/esta_tarea2/Trabajo/hw_2_barocio.tex" "build/hw_2_barocio.pdf" "hw_2_barocio" 1759188829.09559 0
+["pdflatex"] 1759189469.60735 "c:/Users/jesus/OneDrive/Escritorio/Latex Vs Code Papers/esta_tarea2/Trabajo/hw_2_barocio.tex" "build/hw_2_barocio.pdf" "hw_2_barocio" 1759189470.53858 0
   "C:/Users/jesus/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1759001311 85289 ac562416368bc41a6ee070badc276572 ""
   "C:/Users/jesus/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1733938404 10788011 b5de51927d8092691bee66b8a7a08d40 ""
   "C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -121,13 +121,13 @@
   "C:/Users/jesus/AppData/Local/Programs/MiKTeX/tex/latex/tools/tabularx.sty" 1654690828 7147 be6981d9f5d866a5634048c4a11814a9 ""
   "C:/Users/jesus/AppData/Local/Programs/MiKTeX/tex/latex/tools/xspace.sty" 1654690828 4545 4c279ac9292a1be8afa9ab2f1d3299c2 ""
   "C:/Users/jesus/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "Fig/Modelo_Simulink.pdf" 1759185278 29932 dd10c89d606511d6c5fd3ad2347bf323 ""
+  "Fig/Modelo_Simulink.pdf" 1759189467 30567 4ed3eea5ec156bece7e13b2b866c5617 ""
   "Fig/fig1.pdf" 1759185278 58099 46156f7a6369f06969ce15c1eb7e9faf ""
   "IEEEtran.cls" 1758927788 288304 5b2e4fa15b0f7eabb840ebf67df4c0f7 ""
-  "build/hw_2_barocio.aux" 1759188828 2916 574025945bede0593797e3d9a7d47a54 "pdflatex"
-  "build/hw_2_barocio.out" 1759188828 3071 0792e9cf1793ee9e41983eaa7c4a4c03 "pdflatex"
-  "c:/Users/jesus/OneDrive/Escritorio/Latex Vs Code Papers/esta_tarea2/Trabajo/hw_2_barocio.tex" 1759188784 8382 306e8dc275b0d06f12f21ad62a2d9ef5 ""
-  "hw_2_barocio.tex" 1759188784 8382 306e8dc275b0d06f12f21ad62a2d9ef5 ""
+  "build/hw_2_barocio.aux" 1759189470 2916 06ae92529efbebb9f64e3b484913c418 "pdflatex"
+  "build/hw_2_barocio.out" 1759189470 3071 0792e9cf1793ee9e41983eaa7c4a4c03 "pdflatex"
+  "c:/Users/jesus/OneDrive/Escritorio/Latex Vs Code Papers/esta_tarea2/Trabajo/hw_2_barocio.tex" 1759189468 10091 e8ec079c6f604d6e16442ab1c1ea9251 ""
+  "hw_2_barocio.tex" 1759189468 10091 e8ec079c6f604d6e16442ab1c1ea9251 ""
   (generated)
   "build/hw_2_barocio.aux"
   "build/hw_2_barocio.log"
