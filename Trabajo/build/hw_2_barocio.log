@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.2.5)  29 SEP 2025 16:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.2.5)  29 SEP 2025 17:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"g:/Mi unidad/2. Segundo Semestre/3. Análisis de Estabilidad Dinámica en Redes Eléctricas de Gran Tamaño/Tareas/esta_tare2/esta_tarea2/Trabajo/hw_2_barocio.tex"
-(g:/Mi unidad/2. Segundo Semestre/3. Análisis de Estabilidad Dinámica en Redes Eléctricas de Gran Tamaño/Tareas/esta_tare2/esta_tarea2/Trabajo/hw_2_barocio.tex
+**"g:/Mi unidad/2. Segundo Semestre/3. Análisis de Estabilidad Dinámica en Redes Eléctricas de Gran Tamaño/Tareas/esta_tarea2/Trabajo/hw_2_barocio.tex"
+(g:/Mi unidad/2. Segundo Semestre/3. Análisis de Estabilidad Dinámica en Redes Eléctricas de Gran Tamaño/Tareas/esta_tarea2/Trabajo/hw_2_barocio.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
 (IEEEtran.cls
@@ -436,7 +436,7 @@ Package: fancyhdr 2025/01/07 v5.1.1 Extensive control of page headers and footer
 \f@nch@widthC=\skip77
 \f@nch@widthR=\skip78
 \@temptokenb=\toks28
-) (g:\Mi unidad\2. Segundo Semestre\3. Análisis de Estabilidad Dinámica en Redes Eléctricas de Gran Tamaño\Tareas\esta_tare2\esta_tarea2\Trabajo\build\hw_2_barocio.aux)
+) (g:\Mi unidad\2. Segundo Semestre\3. Análisis de Estabilidad Dinámica en Redes Eléctricas de Gran Tamaño\Tareas\esta_tarea2\Trabajo\build\hw_2_barocio.aux)
 \openout1 = `hw_2_barocio.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
@@ -479,7 +479,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package hyperref Info: Link coloring ON on input line 35.
- (g:\Mi unidad\2. Segundo Semestre\3. Análisis de Estabilidad Dinámica en Redes Eléctricas de Gran Tamaño\Tareas\esta_tare2\esta_tarea2\Trabajo\build\hw_2_barocio.out) (g:\Mi unidad\2. Segundo Semestre\3. Análisis de Estabilidad Dinámica en Redes Eléctricas de Gran Tamaño\Tareas\esta_tare2\esta_tarea2\Trabajo\build\hw_2_barocio.out)
+ (g:\Mi unidad\2. Segundo Semestre\3. Análisis de Estabilidad Dinámica en Redes Eléctricas de Gran Tamaño\Tareas\esta_tarea2\Trabajo\build\hw_2_barocio.out) (g:\Mi unidad\2. Segundo Semestre\3. Análisis de Estabilidad Dinámica en Redes Eléctricas de Gran Tamaño\Tareas\esta_tarea2\Trabajo\build\hw_2_barocio.out)
 \@outlinefile=\write3
 \openout3 = `hw_2_barocio.out'.
 
@@ -533,24 +533,11 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 117.
 
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 119.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 119.
-
-
-Overfull \hbox (8.19511pt too wide) in paragraph at lines 133--133
- []|\OT1/ptm/b/n/8 Parametro| 
- []
-
-
-Overfull \hbox (9.33086pt too wide) in paragraph at lines 137--137
- []|\OT1/ptm/b/n/8 Calculados| 
- []
-
+<Fig/fig1.pdf, id=54, 348.30125pt x 137.51375pt>
+File: Fig/fig1.pdf Graphic file (type pdf)
+<use Fig/fig1.pdf>
+Package pdftex.def Info: Fig/fig1.pdf  used on input line 127.
+(pdftex.def)             Requested size: 252.0pt x 99.49242pt.
 [1{C:/Users/alumn/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
 
 
@@ -558,8 +545,26 @@ Overfull \hbox (9.33086pt too wide) in paragraph at lines 137--137
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.168 \bibitem{b2}
-                   Mohan N., Undeland T. M., Robbins W. P. (2002) Power Elec... <./Fig/Modelo_Simulink.pdf>]
+l.131 
+       <./Fig/Modelo_Simulink.pdf>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 140.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 140.
+
+
+Overfull \hbox (8.19511pt too wide) in paragraph at lines 154--154
+ []|\OT1/ptm/b/n/8 Parametro| 
+ []
+
+
+Overfull \hbox (9.33086pt too wide) in paragraph at lines 158--158
+ []|\OT1/ptm/b/n/8 Calculados| 
+ []
+
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -575,15 +580,20 @@ Before submitting the final camera ready copy, remember to:
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.171 \end{document}
+l.192 \end{document}
                      [2
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.192 \end{document}
+                    
 pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.171 \end{document}
+l.192 \end{document}
                     
 
-] (g:\Mi unidad\2. Segundo Semestre\3. Análisis de Estabilidad Dinámica en Redes Eléctricas de Gran Tamaño\Tareas\esta_tare2\esta_tarea2\Trabajo\build\hw_2_barocio.aux)
+ <./Fig/fig1.pdf>] (g:\Mi unidad\2. Segundo Semestre\3. Análisis de Estabilidad Dinámica en Redes Eléctricas de Gran Tamaño\Tareas\esta_tarea2\Trabajo\build\hw_2_barocio.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -592,17 +602,17 @@ Package rerunfilecheck Info: File `hw_2_barocio.out' has not changed.
 (rerunfilecheck)             Checksum: 0792E9CF1793EE9E41983EAA7C4A4C03;3071.
  ) 
 Here is how much of TeX's memory you used:
- 12080 strings out of 474486
- 198450 string characters out of 5743756
- 1962542 words of memory out of 5000000
- 34162 multiletter control sequences out of 15000+600000
+ 12091 strings out of 474486
+ 198499 string characters out of 5743756
+ 1954542 words of memory out of 5000000
+ 34172 multiletter control sequences out of 15000+600000
  598937 words of font info for 121 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,14n,107p,705b,583s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "g:\Mi unidad\2. Segundo Semestre\3. Análisis de Estabilidad Dinámica en Redes Eléctricas de Gran Tamaño\Tareas\esta_tare2\esta_tarea2\Trabajo\build\hw_2_barocio.pdf" (2 pages, 181646 bytes).
+ 94i,14n,107p,694b,448s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on "g:\Mi unidad\2. Segundo Semestre\3. Análisis de Estabilidad Dinámica en Redes Eléctricas de Gran Tamaño\Tareas\esta_tarea2\Trabajo\build\hw_2_barocio.pdf" (2 pages, 262649 bytes).
 PDF statistics:
- 140 PDF objects out of 1000 (max. 8388607)
- 18 named destinations out of 1000 (max. 500000)
- 102 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 181 PDF objects out of 1000 (max. 8388607)
+ 19 named destinations out of 1000 (max. 500000)
+ 107 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -116,6 +116,27 @@ Para determinar los parámetros del generador se utilizó como base el esquema m
 
 \subsection{Prueba de rechazo de carga en el eje $-d-$}
 
+Para esta prueba se verifica antes del rechazo de carga que $P_0=0\text{ pu}$, $Q_0=0.1239\text{ pu}$ (capacitive load),
+$V_{t_0}=1\text{ pu}$, $i_{t_0}=0.1239\text{ pu}$ y $v_f=0.87\text{ pu}$.
+
+Para el rechazo de carga en $t=25\text{ s}$, se obtiene el comportamiento para la tensión
+en los terminales de generador ($v_t$) mostrados en la Fig. \ref{fig:fig1}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{Fig/fig1.pdf}
+    \caption{Modelo base implementado en Simulink}
+    \label{fig:fig1}
+\end{figure}
+
+Para calcular los valores de reactancias se obtiene las intersecciones en las tendencias del
+voltaje terminal con el eje del voltaje terminal en el momento que ocurre el rechazo de carga
+como muestra la Fig. \ref{fig:fig1}. Utilizando estos valores se calculan las reactancias como:
+
+\begin{equation*}
+x_d = \frac{h}{i_{t_0}}=\frac{1-0.87}{0.1239}=1.0492\text{ pu}
+\end{equation*}
+
 \subsection{Prueba de rechazo de carga en el eje $-q-$}
 
 \subsection{Prueba de rechazo de carga en el eje arbitrario}
