@@ -460,18 +460,14 @@ ylabel('$\delta(^\circ)$');
 t0 = 25.0;          % instante del evento
 h = h1_vtsin(1);         % amplitud rápida (subtransitoria)
 
-nivel_h = 0.368 * h;  % nivel de cruce
+nivel_h = h1_vtsin(1) - 0.368 * h;  % nivel de cruce
 % buscar tiempo en el que i_fd cruza ese nivel
-win_vf_sin = (t >= t0) & (t <= t0 + 0.2);
-[~, idx_local] = min(abs(vt_sen(win_vf_sin) - nivel_h));
-idx1 = find(win_vf_sin, 1, 'first') + idx_local - 1;
-t_cruce_h = t(idx1);
-Tpp = t_cruce_h - t0;  % T''qo
-% ===== Mostrar resultados =====
-fprintf('Nivel 0.368*h = %.4f pu se cruza en t = %.4f s\n', nivel_h, t_cruce_h);
-fprintf('T''''qo (subtransitoria) = %.4f s\n', Tpp);
+win_vf_sin = (t_id >= t0) & (t_id <= t0 + 0.2);
+[~, idx_local] = min(abs(vt_sen(win_ifd) - nivel_h));
+idx1 = find(vf_sin, 1, 'first') + idx_local - 1;
+t_cruce_h1 = t_id(idx1);
+Tpp = t_cruce_h1 - t0;  % T''do
 
-exportgraphics(f6,'fig6.pdf','ContentType','vector','BackgroundColor','white');
-exportgraphics(f7,'fig7.pdf','ContentType','vector','BackgroundColor','white');
-exportgraphics(f8,'fig8.pdf','ContentType','vector','BackgroundColor','white');
+% exportgraphics(f6,'fig6.pdf','ContentType','vector','BackgroundColor','white');
+% exportgraphics(f7,'fig7.pdf','ContentType','vector','BackgroundColor','white');
 

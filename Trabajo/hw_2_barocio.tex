@@ -5,10 +5,11 @@
 \usepackage{amsmath}
 \usepackage{amssymb} 
 \usepackage{array}
-
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{array,booktabs,tabularx}
 \usepackage{blindtext}
 \usepackage{color}
-
 \usepackage[colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue]{hyperref}
 \usepackage[all]{hypcap}
 \usepackage{float}
@@ -20,7 +21,6 @@
 
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
-
 \usepackage{mwe}
 \usepackage{fancyhdr}
 \fancypagestyle{firststyle}
@@ -29,6 +29,7 @@
 	\fancyfoot[C]{}
 }
 
+\newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}
 %\hyphenation{ }
 
 \begin{document}
@@ -77,6 +78,7 @@ Los parámetros fundamentales del generador síncrono son: $r_s$, $r_{fd}$, $r_{
 
 Los parámetros estándar del generador síncrono son las reactancias síncronas, las reactancias síncronas transitorias, las reactancias síncronas subtransitorias, las constantes de tiempo transitorias y subtransitorias en circuito abierto y las constantes de tiempo transitorias y subtransitorias en cortocircuito; es decir, $x_d$, $x_q$, $x^{'}_d$, $x^{'}_q$, $x^{''}_d$, $x^{''}_q$, $T^{'}_{do}$, $T^{'}_{qo}$, $T^{''}_{do}$, $T^{''}_{qo}$, $T^{'}_{d}$, $T^{'}_{q}$, $T^{''}_{d}$, $T^{''}_{q}$.
 
+<<<<<<< HEAD
 La identificación de sus parámetros de estado permanente y transitorio es muy importante para el análisis de estabilidad, esto debido a \dots
 
 Existen principalmente 2 pruebas para la determinación de parámetros de un generador síncrono, los cuales han obtenido importancia debido al bajo nivel de riesgo y a su facilidad, los cuales son el método de respuesta en frecuencia y el método de rechazo de carga.
@@ -98,7 +100,82 @@ La prueba en el eje de cuadratura se realiza encontrando un punto de carga en el
 
 \subsection{Prueba de rechazo de carga en eje arbitrario}
 
+=======
+\section{Pruebas de Rechazo de Carga para Determinación de Parámetros de Generadores Síncronos} 
+>>>>>>> 5f5bccc9becedb1841521815e039b4f6e67201d6
 
+Las pruebas de rechazo de carga constituyen una metodología estandarizada según las normas IEEE 115
+para la determinación experimental de los parámetros operativos de generadores síncronos. Estas pruebas
+se realizan mediante la desconexión brusca del generador del sistema de potencia, manteniendo constante
+la tensión de campo y registrando la respuesta transitoria de las variables eléctricas.
+
+\subsection{Prueba de rechazo de carga en el eje directo $-d-$}
+
+Esta prueba se ejecuta con el generador entregando potencia activa nula y potencia reactiva máxima,
+condiciones bajo las cuales la corriente de armadura se alinea exclusivamente con el eje directo.
+Durante el rechazo de carga, se registra el decaimiento transitorio de la tensión terminal, cuyo análisis
+permite determinar las reactancias síncrona, transitoria y subtransitoria del eje directo ($x_d, x^{'}_d, x^{''}_d$) así como las constantes
+de tiempo en circuito abierto ($T^{'}_{qo}$, $T^{''}_{do}$)
+
+\subsection{Prueba de rechazo de carga en el eje en cuadratura $-q-$}
+
+Para esta prueba, se ajusta la operación del generador de modo que el ángulo de potencia coincida con el ángulo del factor de potencia,
+logrando que la corriente de armadura posea únicamente componente en cuadratura. El análisis del transitorio de tensión resultante del
+rechazo de carga permite calcular la reactancia síncrona y subtransitoria del eje $q$ ($x_q, x^{''}_q$)
+
+\subsection{Prueba de rechazo de carga en el eje arbitrario}
+
+Esta prueba representa la metodología más comprehensiva, ya que se realiza con el generador operando en condiciones de carga arbitrarias,
+con componentes de corriente tanto en el eje directo como en cuadratura. El procesamiento de la respuesta transitoria, particularmente de
+la componente en cuadratura de la tensión y corriente, permite determinar el conjunto completo de parámetros del eje q 
+($x_q, x^{'}_q, x^{''}_q, T^{'}_{qo}$, $T^{''}_{do}$)
+
+
+Para realizar las diferentes pruebas para obtener los parámetros del generador se utilizó
+como base el esquema mostrado en la Fig. \ref{fig:Modelo_Simulink}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{Fig/Modelo_Simulink.pdf}
+    \caption{Modelo base implementado en Simulink}
+    \label{fig:Modelo_Simulink}
+\end{figure}
+
+\setlength{\extrarowheight}{2pt} % eleva todas las filas
+\begin{table}[ht]
+\centering
+\caption{Parametros en p.u.}
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{C{1cm} C{1cm} C{1cm} C{1cm} C{1cm} C{1.25cm}}
+\toprule
+\textbf{Parametro} &
+\textbf{Rechazo de carga en el eje directo} &
+\textbf{Rechazo de carga en el eje directo} &
+\textbf{Rechazo de carga en eje arbitrario} &
+\textbf{Calculados} & 
+\textbf{Valores de diseño} \\
+%\cmidrule(lr){5-6}
+%\multicolumn{1}{c}{} &
+%\multicolumn{1}{c}{\textbf{Load Rejection}} &
+%\multicolumn{1}{c}{\textbf{Load Rejection}} &
+%\multicolumn{1}{c}{\textbf{Load Rejection}} &
+%\textbf{Calculated} & \textbf{Design Values} \\
+\hline
+\midrule
+$T'_{do}$ & 3.8955 & --     & --     & --     & 3.7724 \\
+$T''_{do}$ & 0.0245 & --     & --     & --     & 0.0238 \\
+$T''_{qo}$ & --     & --     & 0.0333 & --     & 0.0334 \\
+$x_d$ & 1.0492 & --     & --     & --     & 1.0495 \\
+$x_q$ & --     & 0.6334 & 0.6224 & --     & 0.6313 \\
+$x'_d$ & 0.3257 & --     & --     & --     & 0.3320 \\
+$x''_d$ & 0.18 & --     & --     & --     & 0.1963 \\
+$x''_q$ & --     & 0.2489 & 0.1991 & --     & 0.2496 \\
+$T'_d$ & --     & --     & --     & 1.2093 & 1.1939 \\
+$T''_d$ & --     & --     & --     & 0.0135 & 0.0140 \\
+$T''_q$ & --     & --     & --     & 0.0131 & 0.0132 \\
+\bottomrule
+\end{tabular}
+\end{table}
 
 
 \section{Conclusiones}
