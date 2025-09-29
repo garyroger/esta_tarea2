@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1759185423.75774 "g:/Mi unidad/2. Segundo Semestre/3. Análisis de Estabilidad Dinámica en Redes Eléctricas de Gran Tamaño/Tareas/esta_tare2/esta_tarea2/Trabajo/hw_2_barocio.tex" "build/hw_2_barocio.pdf" "hw_2_barocio" 1759185425.31563 0
+["pdflatex"] 1759185791.98119 "g:/Mi unidad/2. Segundo Semestre/3. Análisis de Estabilidad Dinámica en Redes Eléctricas de Gran Tamaño/Tareas/esta_tare2/esta_tarea2/Trabajo/hw_2_barocio.tex" "build/hw_2_barocio.pdf" "hw_2_barocio" 1759185793.50895 0
   "C:/Users/alumn/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1759184908 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/alumn/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1738786947 24225045 21ef95abcdbbd61c78902ffc185618d3 ""
   "C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -119,10 +119,10 @@
   "C:/Users/alumn/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "Fig/Modelo_Simulink.pdf" 1759184846 30567 4ed3eea5ec156bece7e13b2b866c5617 ""
   "IEEEtran.cls" 1759184431 288304 5b2e4fa15b0f7eabb840ebf67df4c0f7 ""
-  "build/hw_2_barocio.aux" 1759185425 2164 06e56744a14b869fab65f38d29cd42fe "pdflatex"
-  "build/hw_2_barocio.out" 1759185425 2910 941de0ab55548410cff5bcbf1c9a92b1 "pdflatex"
-  "g:/Mi unidad/2. Segundo Semestre/3. Análisis de Estabilidad Dinámica en Redes Eléctricas de Gran Tamaño/Tareas/esta_tare2/esta_tarea2/Trabajo/hw_2_barocio.tex" 1759185421 7246 dfe9c310b8a517d78642143fb63794c7 ""
-  "hw_2_barocio.tex" 1759185421 7246 dfe9c310b8a517d78642143fb63794c7 ""
+  "build/hw_2_barocio.aux" 1759185793 2301 6aacef9a344a75e21436ad789240f35e "pdflatex"
+  "build/hw_2_barocio.out" 1759185793 3071 0792e9cf1793ee9e41983eaa7c4a4c03 "pdflatex"
+  "g:/Mi unidad/2. Segundo Semestre/3. Análisis de Estabilidad Dinámica en Redes Eléctricas de Gran Tamaño/Tareas/esta_tare2/esta_tarea2/Trabajo/hw_2_barocio.tex" 1759185789 7283 1328ea2f1051258a22025fe8c6315b86 ""
+  "hw_2_barocio.tex" 1759185789 7283 1328ea2f1051258a22025fe8c6315b86 ""
   (generated)
   "build/hw_2_barocio.aux"
   "build/hw_2_barocio.log"
