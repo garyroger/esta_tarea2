@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1759185282.18469 "c:/Users/jesus/OneDrive/Escritorio/Latex Vs Code Papers/esta_tarea2/Trabajo/hw_2_barocio.tex" "build/hw_2_barocio.pdf" "hw_2_barocio" 1759185283.15015 0
+["pdflatex"] 1759188828.14261 "c:/Users/jesus/OneDrive/Escritorio/Latex Vs Code Papers/esta_tarea2/Trabajo/hw_2_barocio.tex" "build/hw_2_barocio.pdf" "hw_2_barocio" 1759188829.09559 0
   "C:/Users/jesus/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1759001311 85289 ac562416368bc41a6ee070badc276572 ""
   "C:/Users/jesus/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1733938404 10788011 b5de51927d8092691bee66b8a7a08d40 ""
   "C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -35,10 +35,13 @@
   "C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb" 1247596666 37166 8ab3487cbe3ab49ebce74c29ea2418db ""
   "C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1247596667 36281 c355509802a035cadc5f15869451dcee ""
   "C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1247596666 35469 dcf3a5f2fc1862f5952e3ee5eb1d98c4 ""
+  "C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247596667 35752 024fb6c41858982481f6968b5fc26508 ""
+  "C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb" 1247596667 31809 8670ca339bf94e56da1fc21c80635e2a ""
   "C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1247596667 32762 7fee39e011c23b3589931effd97b9702 ""
   "C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb" 1247596666 32915 7bf7720c61a5b3a7ff25b0964421c9b6 ""
   "C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb" 1247596667 32587 65067f817f408bc71a7312f3d9828a9b ""
+  "C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1247596666 32716 08e384dc442464e7285e891af9f45947 ""
   "C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1247596667 32626 5abc8bb2f28aa647d4c70f8ea38cc0d3 ""
   "C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb" 1136874948 44729 fea0975e20ec51c992338362f05f1146 ""
   "C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb" 1136874948 44656 0cbca70e0534538582128f6b54593cca ""
@@ -119,11 +122,12 @@
   "C:/Users/jesus/AppData/Local/Programs/MiKTeX/tex/latex/tools/xspace.sty" 1654690828 4545 4c279ac9292a1be8afa9ab2f1d3299c2 ""
   "C:/Users/jesus/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "Fig/Modelo_Simulink.pdf" 1759185278 29932 dd10c89d606511d6c5fd3ad2347bf323 ""
+  "Fig/fig1.pdf" 1759185278 58099 46156f7a6369f06969ce15c1eb7e9faf ""
   "IEEEtran.cls" 1758927788 288304 5b2e4fa15b0f7eabb840ebf67df4c0f7 ""
-  "build/hw_2_barocio.aux" 1759185282 2714 b73c3223f5f106002ed1f3ef685f537b "pdflatex"
-  "build/hw_2_barocio.out" 1759185282 3310 456e8dc27b25670dc4cacb5082113698 "pdflatex"
-  "c:/Users/jesus/OneDrive/Escritorio/Latex Vs Code Papers/esta_tarea2/Trabajo/hw_2_barocio.tex" 1759185278 9091 cef4ada02d8d5119a5fa9c2ae908853b ""
-  "hw_2_barocio.tex" 1759185278 9091 cef4ada02d8d5119a5fa9c2ae908853b ""
+  "build/hw_2_barocio.aux" 1759188828 2916 574025945bede0593797e3d9a7d47a54 "pdflatex"
+  "build/hw_2_barocio.out" 1759188828 3071 0792e9cf1793ee9e41983eaa7c4a4c03 "pdflatex"
+  "c:/Users/jesus/OneDrive/Escritorio/Latex Vs Code Papers/esta_tarea2/Trabajo/hw_2_barocio.tex" 1759188784 8382 306e8dc275b0d06f12f21ad62a2d9ef5 ""
+  "hw_2_barocio.tex" 1759188784 8382 306e8dc275b0d06f12f21ad62a2d9ef5 ""
   (generated)
   "build/hw_2_barocio.aux"
   "build/hw_2_barocio.log"

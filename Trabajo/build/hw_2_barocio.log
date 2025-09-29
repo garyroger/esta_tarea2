@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2024.12.11)  29 SEP 2025 16:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2024.12.11)  29 SEP 2025 17:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -495,49 +495,71 @@ Underfull \hbox (badness 1824) in paragraph at lines 68--70
  []
 
 
-Underfull \hbox (badness 5533) in paragraph at lines 107--111
+Underfull \hbox (badness 5533) in paragraph at lines 81--85
 []\OT1/ptm/m/n/10 Las prue-bas de rec-hazo de carga con-sti-tuyen una
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 112.
+(hyperref)                removing `math shift' on input line 86.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 112.
+(hyperref)                removing `math shift' on input line 86.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 120.
+(hyperref)                removing `math shift' on input line 94.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 120.
-
-[1{C:/Users/jesus/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
-
-
-]
-Underfull \hbox (badness 2189) in paragraph at lines 134--136
-[]\OT1/ptm/m/n/10 Para re-alizar las difer-entes prue-bas para obtener los
- []
+(hyperref)                removing `math shift' on input line 94.
 
 
 
 pdfTeX warning: pdflatex (file ./Fig/Modelo_Simulink.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Fig/Modelo_Simulink.pdf, id=67, 1090.0725pt x 387.69844pt>
+<Fig/Modelo_Simulink.pdf, id=52, 1090.0725pt x 387.69844pt>
 File: Fig/Modelo_Simulink.pdf Graphic file (type pdf)
 <use Fig/Modelo_Simulink.pdf>
-Package pdftex.def Info: Fig/Modelo_Simulink.pdf  used on input line 139.
+Package pdftex.def Info: Fig/Modelo_Simulink.pdf  used on input line 112.
 (pdftex.def)             Requested size: 252.0pt x 89.62427pt.
 
-Overfull \hbox (8.19511pt too wide) in paragraph at lines 151--151
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 117.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 117.
+
+<Fig/fig1.pdf, id=54, 348.30125pt x 137.51375pt>
+File: Fig/fig1.pdf Graphic file (type pdf)
+<use Fig/fig1.pdf>
+Package pdftex.def Info: Fig/fig1.pdf  used on input line 127.
+(pdftex.def)             Requested size: 252.0pt x 99.49242pt.
+[1{C:/Users/jesus/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.131 
+       <./Fig/Modelo_Simulink.pdf>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 142.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 142.
+
+
+Overfull \hbox (8.19511pt too wide) in paragraph at lines 156--156
  []|\OT1/ptm/b/n/8 Parametro| 
  []
 
 
-Overfull \hbox (9.33086pt too wide) in paragraph at lines 155--155
+Overfull \hbox (9.33086pt too wide) in paragraph at lines 160--160
  []|\OT1/ptm/b/n/8 Calculados| 
  []
 
@@ -556,33 +578,33 @@ Before submitting the final camera ready copy, remember to:
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.189 \end{document}
+l.194 \end{document}
                      [2
-pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.189 \end{document}
+l.194 \end{document}
                     
 pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.189 \end{document}
-                     <./Fig/Modelo_Simulink.pdf>] (c:\Users\jesus\OneDrive\Escritorio\Latex Vs Code Papers\esta_tarea2\Trabajo\build\hw_2_barocio.aux)
+l.194 \end{document}
+                     <./Fig/fig1.pdf>] (c:\Users\jesus\OneDrive\Escritorio\Latex Vs Code Papers\esta_tarea2\Trabajo\build\hw_2_barocio.aux)
 Package rerunfilecheck Info: File `hw_2_barocio.out' has not changed.
-(rerunfilecheck)             Checksum: 456E8DC27B25670DC4CACB5082113698;3310.
+(rerunfilecheck)             Checksum: 0792E9CF1793EE9E41983EAA7C4A4C03;3071.
  ) 
 Here is how much of TeX's memory you used:
- 12081 strings out of 475385
- 199520 string characters out of 2776906
- 646968 words of memory out of 3000000
- 33252 multiletter control sequences out of 15000+600000
+ 12090 strings out of 475385
+ 199683 string characters out of 2776906
+ 646025 words of memory out of 3000000
+ 33259 multiletter control sequences out of 15000+600000
  510127 words of font info for 113 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 87i,14n,91p,739b,445s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "c:\Users\jesus\OneDrive\Escritorio\Latex Vs Code Papers\esta_tarea2\Trabajo\build\hw_2_barocio.pdf" (2 pages, 184088 bytes).
+ 87i,14n,91p,635b,443s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on "c:\Users\jesus\OneDrive\Escritorio\Latex Vs Code Papers\esta_tarea2\Trabajo\build\hw_2_barocio.pdf" (2 pages, 271191 bytes).
 PDF statistics:
- 140 PDF objects out of 1000 (max. 8388607)
- 18 named destinations out of 1000 (max. 500000)
- 102 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 186 PDF objects out of 1000 (max. 8388607)
+ 19 named destinations out of 1000 (max. 500000)
+ 107 words of extra memory for PDF output out of 10000 (max. 10000000)
 
