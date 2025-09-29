@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1759187727.2592 "g:/Mi unidad/2. Segundo Semestre/3. Análisis de Estabilidad Dinámica en Redes Eléctricas de Gran Tamaño/Tareas/esta_tarea2/Trabajo/hw_2_barocio.tex" "build/hw_2_barocio.pdf" "hw_2_barocio" 1759187728.84449 0
+["pdflatex"] 1759188390.52639 "g:/Mi unidad/2. Segundo Semestre/3. Análisis de Estabilidad Dinámica en Redes Eléctricas de Gran Tamaño/Tareas/esta_tarea2/Trabajo/hw_2_barocio.tex" "build/hw_2_barocio.pdf" "hw_2_barocio" 1759188392.14495 0
   "C:/Users/alumn/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1759184908 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/alumn/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1738786947 24225045 21ef95abcdbbd61c78902ffc185618d3 ""
   "C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -41,6 +41,7 @@
   "C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb" 1247596666 32915 7bf7720c61a5b3a7ff25b0964421c9b6 ""
   "C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb" 1247596667 32587 65067f817f408bc71a7312f3d9828a9b ""
+  "C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1247596666 32716 08e384dc442464e7285e891af9f45947 ""
   "C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1247596667 32626 5abc8bb2f28aa647d4c70f8ea38cc0d3 ""
   "C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb" 1136874948 44729 fea0975e20ec51c992338362f05f1146 ""
   "C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb" 1136874948 44656 0cbca70e0534538582128f6b54593cca ""
@@ -122,10 +123,10 @@
   "Fig/Modelo_Simulink.pdf" 1759186177 30567 4ed3eea5ec156bece7e13b2b866c5617 ""
   "Fig/fig1.pdf" 1759186177 58099 46156f7a6369f06969ce15c1eb7e9faf ""
   "IEEEtran.cls" 1759186177 288304 5b2e4fa15b0f7eabb840ebf67df4c0f7 ""
-  "build/hw_2_barocio.aux" 1759187728 2524 6bafc63c785de6acf6b99e2ce0c735d4 "pdflatex"
-  "build/hw_2_barocio.out" 1759187728 3071 0792e9cf1793ee9e41983eaa7c4a4c03 "pdflatex"
-  "g:/Mi unidad/2. Segundo Semestre/3. Análisis de Estabilidad Dinámica en Redes Eléctricas de Gran Tamaño/Tareas/esta_tarea2/Trabajo/hw_2_barocio.tex" 1759187726 8222 b9b2b5f21da28032c15eba89ae9a96f6 ""
-  "hw_2_barocio.tex" 1759187726 8222 b9b2b5f21da28032c15eba89ae9a96f6 ""
+  "build/hw_2_barocio.aux" 1759188391 2524 6bafc63c785de6acf6b99e2ce0c735d4 "pdflatex"
+  "build/hw_2_barocio.out" 1759188391 3071 0792e9cf1793ee9e41983eaa7c4a4c03 "pdflatex"
+  "g:/Mi unidad/2. Segundo Semestre/3. Análisis de Estabilidad Dinámica en Redes Eléctricas de Gran Tamaño/Tareas/esta_tarea2/Trabajo/hw_2_barocio.tex" 1759188390 8382 306e8dc275b0d06f12f21ad62a2d9ef5 ""
+  "hw_2_barocio.tex" 1759188390 8382 306e8dc275b0d06f12f21ad62a2d9ef5 ""
   (generated)
   "build/hw_2_barocio.aux"
   "build/hw_2_barocio.log"
