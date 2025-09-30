@@ -163,6 +163,12 @@ INPUT C:\Users\alumn\AppData\Local\Programs\MiKTeX\tex\latex\oberdiek\hypcap.sty
 INPUT C:\Users\alumn\AppData\Local\Programs\MiKTeX\tex\latex\oberdiek\hypcap.sty
 INPUT C:\Users\alumn\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
 INPUT C:\Users\alumn\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Users\alumn\AppData\Local\Programs\MiKTeX\tex\latex\caption\subcaption.sty
+INPUT C:\Users\alumn\AppData\Local\Programs\MiKTeX\tex\latex\caption\subcaption.sty
+INPUT C:\Users\alumn\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Users\alumn\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Users\alumn\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption3.sty
+INPUT C:\Users\alumn\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption3.sty
 INPUT C:\Users\alumn\AppData\Local\Programs\MiKTeX\tex\latex\mwe\mwe.sty
 INPUT C:\Users\alumn\AppData\Local\Programs\MiKTeX\tex\latex\mwe\mwe.sty
 INPUT C:\Users\alumn\AppData\Local\Programs\MiKTeX\tex\latex\lipsum\lipsum.sty
@@ -238,18 +244,6 @@ INPUT C:\Users\alumn\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\sym
 INPUT C:\Users\alumn\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\alumn\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 INPUT C:\Users\alumn\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmrc7t.tfm
-INPUT .\Fig\Modelo_Simulink.pdf
-INPUT .\Fig\Modelo_Simulink.pdf
-INPUT .\Fig\Modelo_Simulink.pdf
-INPUT .\Fig\Modelo_Simulink.pdf
-INPUT .\Fig\Modelo_Simulink.pdf
-INPUT .\Fig\Modelo_Simulink.pdf
-INPUT .\Fig\fig1.pdf
-INPUT .\Fig\fig1.pdf
-INPUT .\Fig\fig1.pdf
-INPUT .\Fig\fig1.pdf
-INPUT .\Fig\fig1.pdf
-INPUT .\Fig\fig1.pdf
 INPUT C:\Users\alumn\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmro7t.tfm
 INPUT C:\Users\alumn\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmr7t.vf
 INPUT C:\Users\alumn\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
@@ -267,7 +261,18 @@ INPUT C:\Users\alumn\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmb7t.v
 INPUT C:\Users\alumn\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
 INPUT C:\Users\alumn\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmrc7t.vf
 INPUT C:\Users\alumn\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
-INPUT C:\Users\alumn\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmr7t.vf
+INPUT .\Fig\Modelo_Simulink.pdf
+INPUT .\Fig\Modelo_Simulink.pdf
+INPUT .\Fig\Modelo_Simulink.pdf
+INPUT .\Fig\Modelo_Simulink.pdf
+INPUT .\Fig\Modelo_Simulink.pdf
+INPUT .\Fig\Modelo_Simulink.pdf
+INPUT .\Fig\fig1.pdf
+INPUT .\Fig\fig1.pdf
+INPUT .\Fig\fig1.pdf
+INPUT .\Fig\fig1.pdf
+INPUT .\Fig\fig1.pdf
+INPUT .\Fig\fig1.pdf
 INPUT .\Fig\fig2.pdf
 INPUT .\Fig\fig2.pdf
 INPUT .\Fig\fig2.pdf
@@ -292,11 +297,9 @@ INPUT .\Fig\fig5.pdf
 INPUT .\Fig\fig5.pdf
 INPUT .\Fig\fig5.pdf
 INPUT .\Fig\fig5.pdf
-INPUT C:\Users\alumn\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmrc7t.tfm
-INPUT C:\Users\alumn\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmrc7t.vf
-INPUT C:\Users\alumn\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
 INPUT C:\Users\alumn\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmb7t.vf
 INPUT C:\Users\alumn\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
+INPUT C:\Users\alumn\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmr7t.vf
 INPUT g:\Mi unidad\2. Segundo Semestre\3. Análisis de Estabilidad Dinámica en Redes Eléctricas de Gran Tamaño\Tareas\esta_tarea2\Trabajo\build\hw_2_barocio.aux
 INPUT g:\Mi unidad\2. Segundo Semestre\3. Análisis de Estabilidad Dinámica en Redes Eléctricas de Gran Tamaño\Tareas\esta_tarea2\Trabajo\build\hw_2_barocio.out
 INPUT g:\Mi unidad\2. Segundo Semestre\3. Análisis de Estabilidad Dinámica en Redes Eléctricas de Gran Tamaño\Tareas\esta_tarea2\Trabajo\build\hw_2_barocio.out

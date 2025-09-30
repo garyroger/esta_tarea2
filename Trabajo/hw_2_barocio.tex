@@ -13,6 +13,7 @@
 \usepackage[colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue]{hyperref}
 \usepackage[all]{hypcap}
 \usepackage{float}
+\usepackage{subcaption}
 
 \usepackage{etoolbox}
 \makeatletter
@@ -75,6 +76,17 @@ El generador síncrono es \dots
 Los parámetros fundamentales del generador síncrono son: $r_s$, $r_{fd}$, $r_{kd}$, $r_{kq1}$, $r_{kq2}$, $x_{Ls}$, $x_{1fd}$, $x_{lkd}$, $x_{lkq1}$, $x_{lkq2}$, $x_{md}$ y $x_{mq}$. Los cuales se calculan usando relaciones matemáticas.
 
 Los parámetros estándar del generador síncrono son las reactancias síncronas, las reactancias síncronas transitorias, las reactancias síncronas subtransitorias, las constantes de tiempo transitorias y subtransitorias en circuito abierto y las constantes de tiempo transitorias y subtransitorias en cortocircuito; es decir, $x_d$, $x_q$, $x^{'}_d$, $x^{'}_q$, $x^{''}_d$, $x^{''}_q$, $T^{'}_{do}$, $T^{'}_{qo}$, $T^{''}_{do}$, $T^{''}_{qo}$, $T^{'}_{d}$, $T^{'}_{q}$, $T^{''}_{d}$, $T^{''}_{q}$.
+
+La identificación de sus parámetros de estado permanente y transitorio es muy importante para el análisis de estabilidad, esto debido a \dots
+
+Existen principalmente 2 pruebas para la determinación de parámetros de un generador síncrono, los cuales han obtenido importancia debido al bajo nivel de riesgo y a su facilidad, los cuales son el método de respuesta en frecuencia y el método de rechazo de carga.
+
+La prueba de respuesta en frecuencia consiste en aplicar una corriente con frecuencias que varíen en el rango de 0.001 Hz a 1 kHz, la cual es aproximadamente del \% de la corriente nominal. Usando los datos de la respuesta en frecuencia obtenidos de la prueba se determinan parámetros estándar de la máquina, es decir, las constantes de tiempo y las reactancias sincronas, transitorias y subtransitorias de los ejes directo y en cuadratura.
+
+El método de rechazo de carga consiste en realizar pruebaas de rechazo de carga en dos puntos operativos, donde las componentes de corriente sólo existan en el eje de interés. La prueba en el eje directo se realiza subexcitando el generador, por lo que debe estar consumiendo potencia reactiva de la red y la potencia activa debe ser despreciable, debido a la excitación insuficiente. Lo cual garantiza la obtención de parámetros no saturados y evita sobretensiones indeseadas durante la prueba. Los datos que permite obtener la prueba en el eje directo son $x_d$, $x^{'}_d$, $x^{''}_d$, $T^{'}_{do}$ y $T^{''}_{do}$.
+
+La prueba en el eje de cuadratura se realiza encontrando un punto de carga en el cual el valor absoluto del ángulo del factor de potencia sea igual al ángulo de potencia, esto con el generador subexcitado.
+
 
 \section{Pruebas de Rechazo de Carga para Determinación de Parámetros de Generadores Síncronos} 
 
@@ -154,30 +166,38 @@ obtenida durante el rechazo de carga mostrado en la Fig. \ref{fig:fig2}
 
 Para esta prueba se verifica antes del rechazo de carga que $P_0 = 0.6249\text{ pu}$, $Q_0 = 0.3054\text{ pu}$ (carga
 capacitiva), $V_{t_0} = 1\text{ pu}$, $i_{t_0} = i_{q_0} = 0.6956\text{ pu}$, $v_f = 0.87\text{ pu}$, $\delta_0 = \varphi_0 = 26.05^{\circ}$.
+
+
+Durante esta prueba se obtiene el comportamiento para $\omega_r$ y $V_t$ mostrados en las Fig. \ref{fig:subfigs} respectivamente.
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}
+        \centering
+        \includegraphics[width=\linewidth]{Fig/fig3.pdf}
+        %\caption{figura 1}
+        \label{fig:fig3}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}
+        \centering
+        \includegraphics[width=\linewidth]{Fig/fig4.pdf}
+        %\caption{figura 2}
+        \label{fig:fig4}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}
+        \centering
+        \includegraphics[width=\linewidth]{Fig/fig5.pdf}
+        
+        \label{fig:fig5}
+    \end{subfigure}
+    \caption{Comportamiento de $V_t$ y $\omega_r$ durante la prueba de rechazo de carga en el eje $-q-$}
+    \label{fig:subfigs}
+\end{figure}
+
+
 \subsection{Prueba de rechazo de carga en el eje arbitrario}.
-
-Durante esta prueba se obtiene el comportamiento para $\omega_r$ y $V_t$ mostrados en las Fig. respectivamente.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=\linewidth]{Fig/fig3.pdf}
-    \caption{Corriente de exitación durante el rechazo de carga}
-    \label{fig:fig3}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=\linewidth]{Fig/fig4.pdf}
-    \caption{Corriente de exitación durante el rechazo de carga}
-    \label{fig:fig4}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=\linewidth]{Fig/fig5.pdf}
-    \caption{Corriente de exitación durante el rechazo de carga}
-    \label{fig:fig5}
-\end{figure}
 
 \subsection{Resultados generales}
 
