@@ -125,13 +125,14 @@ en los terminales de generador ($v_t$) mostrados en la Fig. \ref{fig:fig1}.
 \begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth]{Fig/fig1.pdf}
-    \caption{Modelo base implementado en Simulink}
+    \caption{Voltaje en terminales de la máquina durante el rechazo de carga}
     \label{fig:fig1}
 \end{figure}
 
 Para calcular los valores de reactancias se obtiene las intersecciones en las tendencias del
 voltaje terminal con el eje del voltaje terminal en el momento que ocurre el rechazo de carga
-como muestra la Fig. \ref{fig:fig1}. Utilizando estos valores se calculan las reactancias como:
+como muestra la Fig. \ref{fig:fig1}. Utilizando estos valores se calculan las reactancias como
+se muestra a continuación, donde $A=1-h_2$, $B=1-h_1$ y $C=1-h$:
 
 \begin{gather*}
 x_d = \frac{C}{i_{t_0}} = \frac{1 - 0.87}{0.1239} = 1.0492\text{ pu} \\
@@ -139,9 +140,44 @@ x'_{d} = \frac{B}{i_{t_0}} = \frac{1 - 0.95965}{0.1239} = 0.3257\text{ pu}\\
 x''_{d} = \frac{A}{i_{t_0}} = \frac{1 - 0.97770}{0.1239} = 0.18\text{ pu}\\
 \end{gather*}
 
+Para determinar las constantes de tiempo de circuito abierto se utiliza la curva de corriente de campo
+obtenida durante el rechazo de carga mostrado en la Fig. \ref{fig:fig2}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{Fig/fig2.pdf}
+    \caption{Corriente de exitación durante el rechazo de carga}
+    \label{fig:fig2}
+\end{figure}
+
 \subsection{Prueba de rechazo de carga en el eje $-q-$}
 
-\subsection{Prueba de rechazo de carga en el eje arbitrario}
+Para esta prueba se verifica antes del rechazo de carga que $P_0 = 0.6249\text{ pu}$, $Q_0 = 0.3054\text{ pu}$ (carga
+capacitiva), $V_{t_0} = 1\text{ pu}$, $i_{t_0} = i_{q_0} = 0.6956\text{ pu}$, $v_f = 0.87\text{ pu}$, $\delta_0 = \varphi_0 = 26.05^{\circ}$.
+\subsection{Prueba de rechazo de carga en el eje arbitrario}.
+
+Durante esta prueba se obtiene el comportamiento para $\omega_r$ y $V_t$ mostrados en las Fig. respectivamente.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{Fig/fig3.pdf}
+    \caption{Corriente de exitación durante el rechazo de carga}
+    \label{fig:fig3}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{Fig/fig4.pdf}
+    \caption{Corriente de exitación durante el rechazo de carga}
+    \label{fig:fig4}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{Fig/fig5.pdf}
+    \caption{Corriente de exitación durante el rechazo de carga}
+    \label{fig:fig5}
+\end{figure}
 
 \subsection{Resultados generales}
 
