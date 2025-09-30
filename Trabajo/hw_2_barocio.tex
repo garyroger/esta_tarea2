@@ -13,6 +13,7 @@
 \usepackage[colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue]{hyperref}
 \usepackage[all]{hypcap}
 \usepackage{float}
+\usepackage{subcaption}
 
 \usepackage{etoolbox}
 \makeatletter
@@ -136,13 +137,14 @@ en los terminales de generador ($v_t$) mostrados en la Fig. \ref{fig:fig1}.
 \begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth]{Fig/fig1.pdf}
-    \caption{Modelo base implementado en Simulink}
+    \caption{Voltaje en terminales de la máquina durante el rechazo de carga}
     \label{fig:fig1}
 \end{figure}
 
 Para calcular los valores de reactancias se obtiene las intersecciones en las tendencias del
 voltaje terminal con el eje del voltaje terminal en el momento que ocurre el rechazo de carga
-como muestra la Fig. \ref{fig:fig1}. Utilizando estos valores se calculan las reactancias como:
+como muestra la Fig. \ref{fig:fig1}. Utilizando estos valores se calculan las reactancias como
+se muestra a continuación, donde $A=1-h_2$, $B=1-h_1$ y $C=1-h$:
 
 \begin{gather*}
 x_d = \frac{C}{i_{t_0}} = \frac{1 - 0.87}{0.1239} = 1.0492\text{ pu} \\
@@ -150,9 +152,93 @@ x'_{d} = \frac{B}{i_{t_0}} = \frac{1 - 0.95965}{0.1239} = 0.3257\text{ pu}\\
 x''_{d} = \frac{A}{i_{t_0}} = \frac{1 - 0.97770}{0.1239} = 0.18\text{ pu}\\
 \end{gather*}
 
+Para determinar las constantes de tiempo de circuito abierto se utiliza la curva de corriente de campo
+obtenida durante el rechazo de carga mostrado en la Fig. \ref{fig:fig2}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{Fig/fig2.pdf}
+    \caption{Corriente de exitación durante el rechazo de carga}
+    \label{fig:fig2}
+\end{figure}
+
 \subsection{Prueba de rechazo de carga en el eje $-q-$}
 
-\subsection{Prueba de rechazo de carga en el eje arbitrario}
+Para esta prueba se verifica antes del rechazo de carga que $P_0 = 0.6249\text{ pu}$, $Q_0 = 0.3054\text{ pu}$ (carga
+capacitiva), $V_{t_0} = 1\text{ pu}$, $i_{t_0} = i_{q_0} = 0.6665\text{ pu}$, $v_f = 0.87\text{ pu}$, $\delta_0 = \varphi_0 = 26.05^{\circ}$.
+
+
+Durante esta prueba se obtiene el comportamiento para $\omega_r$ y $V_t$ mostrados en las Fig. \ref{fig:subfigs} respectivamente.
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}
+        \centering
+        \includegraphics[width=\linewidth]{Fig/fig3.pdf}
+        %\caption{figura 1}
+        \label{fig:fig3}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}
+        \centering
+        \includegraphics[width=\linewidth]{Fig/fig4.pdf}
+        %\caption{figura 2}
+        \label{fig:fig4}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}
+        \centering
+        \includegraphics[width=\linewidth]{Fig/fig5.pdf}
+        
+        \label{fig:fig5}
+    \end{subfigure}
+    \caption{Comportamiento de $V_t$ y $\omega_r$ durante la prueba de rechazo de carga en el eje $-q-$}
+    \label{fig:subfigs}
+\end{figure}
+
+Para determinar los parámetros de $x'_q$ y $x''_q$ se procede como se muestra a continuación, donde
+$A=1$, $B=h_1=0.9666\text{ pu}$ y $C=h_2=0.9065\text{ pu}$.
+
+\begin{gather*}
+x_q = \frac{\sqrt{A^2-C^2}}{i_{q_0}} = \frac{\sqrt{1^2 - 0.9065^2}}{0.6665} = 0.6334\text{ pu} \\
+x''_q = \frac{\sqrt{A^2-C^2}-\sqrt{A^2-B^2}}{i_{q_0}}=\cdots\\
+\cdots= \frac{\sqrt{1^2-0.9065^2}-\sqrt{1^2-0.9666^2}}{0.6665} = 0.2489\text{ pu}\\
+\end{gather*}
+
+\subsection{Prueba de rechazo de carga en el eje arbitrario}.
+
+Las cantidades electricas en el instante antesa que se realiza el rechazo de carga son: $P_0 = 0.8437pu$, $Q_0 = 0.5222pu$, $V_t = 1.0003pu$, $i_{t0} = 0.5729pu$, $v_f = 1.7688pu$, $\delta_0 = 20.8946$.
+Usando las expresiones dadas em ***, en los datos de las Fig.\ref{fig:subfigs1}, los parametros $x_q$ y $x''_q$ se pueden calcular de la siguiente manera:
+
+\begin{gather}
+    x_q = \frac{(V_t\sin(\delta))_0}{i_{qo}}\\
+    x''_q = x_q\frac{h}{i_{qo}}
+\end{gather}
+
+\begin{figure}[ht]
+    \centering
+    \begin{subfigure}
+        \centering
+        \includegraphics[width=\linewidth]{Fig/fig6.pdf}
+        %\caption{figura 1}
+        \label{fig:fig6}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}
+        \centering
+        \includegraphics[width=\linewidth]{Fig/fig7.pdf}
+        %\caption{figura 2}
+        \label{fig:fig7}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}
+        \centering
+        \includegraphics[width=\linewidth]{Fig/fig8.pdf}    
+        \label{fig:fig8}
+    \end{subfigure}
+    \caption{Comportamiento de $V_t$ y $\delta_0$ durante la prueba de rechazo de carga en el eje arbitrario}
+    \label{fig:subfigs1}
+\end{figure}
 
 \subsection{Resultados generales}
 
