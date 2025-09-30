@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.2.5)  29 SEP 2025 18:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.2.5)  29 SEP 2025 18:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -617,21 +617,46 @@ Overfull \hbox (2.29996pt too wide) in paragraph at lines 176--192
  []
 
 
-Overfull \hbox (8.19511pt too wide) in paragraph at lines 212--212
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.206 \end{gather*}
+                    [2 <./Fig/Modelo_Simulink.pdf> <./Fig/fig1.pdf> <./Fig/fig2.pdf> <./Fig/fig3.pdf> <./Fig/fig4.pdf> <./Fig/fig5.pdf>]
+<Fig/fig6.pdf, id=207, 350.30875pt x 137.51375pt>
+File: Fig/fig6.pdf Graphic file (type pdf)
+<use Fig/fig6.pdf>
+Package pdftex.def Info: Fig/fig6.pdf  used on input line 222.
+(pdftex.def)             Requested size: 252.0pt x 98.92378pt.
+<Fig/fig7.pdf, id=208, 347.2975pt x 138.5175pt>
+File: Fig/fig7.pdf Graphic file (type pdf)
+<use Fig/fig7.pdf>
+Package pdftex.def Info: Fig/fig7.pdf  used on input line 229.
+(pdftex.def)             Requested size: 252.0pt x 100.51244pt.
+<Fig/fig8.pdf, id=209, 348.30125pt x 140.525pt>
+File: Fig/fig8.pdf Graphic file (type pdf)
+<use Fig/fig8.pdf>
+Package pdftex.def Info: Fig/fig8.pdf  used on input line 236.
+(pdftex.def)             Requested size: 252.0pt x 101.67108pt.
+
+Overfull \hbox (2.29996pt too wide) in paragraph at lines 221--239
+ []  [][][] 
+ []
+
+
+Overfull \hbox (2.29996pt too wide) in paragraph at lines 221--239
+ []  [][][] 
+ []
+
+
+Overfull \hbox (8.19511pt too wide) in paragraph at lines 253--253
  []|\OT1/ptm/b/n/8 Parametro| 
  []
 
 
-Overfull \hbox (9.33086pt too wide) in paragraph at lines 216--216
+Overfull \hbox (9.33086pt too wide) in paragraph at lines 257--257
  []|\OT1/ptm/b/n/8 Calculados| 
  []
 
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.239 \end{table}
-                  [2 <./Fig/Modelo_Simulink.pdf> <./Fig/fig1.pdf> <./Fig/fig2.pdf> <./Fig/fig3.pdf> <./Fig/fig4.pdf> <./Fig/fig5.pdf>]
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -647,29 +672,27 @@ Before submitting the final camera ready copy, remember to:
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.250 \end{document}
-                     [3
-
-] (g:\Mi unidad\2. Segundo Semestre\3. Análisis de Estabilidad Dinámica en Redes Eléctricas de Gran Tamaño\Tareas\esta_tarea2\Trabajo\build\hw_2_barocio.aux)
+l.291 \end{document}
+                     [3 <./Fig/fig6.pdf> <./Fig/fig7.pdf> <./Fig/fig8.pdf>] (g:\Mi unidad\2. Segundo Semestre\3. Análisis de Estabilidad Dinámica en Redes Eléctricas de Gran Tamaño\Tareas\esta_tarea2\Trabajo\build\hw_2_barocio.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `hw_2_barocio.out' has not changed.
-(rerunfilecheck)             Checksum: F1A1DC5F409B412FB314C306D61DD79E;3071.
+(rerunfilecheck)             Checksum: 9753A3B8DD09D4B06E86E07B33F2D7AD;3071.
  ) 
 Here is how much of TeX's memory you used:
- 13502 strings out of 474486
- 226328 string characters out of 5743756
+ 13535 strings out of 474486
+ 226975 string characters out of 5743756
  1955542 words of memory out of 5000000
- 35570 multiletter control sequences out of 15000+600000
+ 35597 multiletter control sequences out of 15000+600000
  597213 words of font info for 119 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,14n,107p,798b,479s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,14n,107p,798b,454s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "g:\Mi unidad\2. Segundo Semestre\3. Análisis de Estabilidad Dinámica en Redes Eléctricas de Gran Tamaño\Tareas\esta_tarea2\Trabajo\build\hw_2_barocio.pdf" (3 pages, 398841 bytes).
+Output written on "g:\Mi unidad\2. Segundo Semestre\3. Análisis de Estabilidad Dinámica en Redes Eléctricas de Gran Tamaño\Tareas\esta_tarea2\Trabajo\build\hw_2_barocio.pdf" (3 pages, 513505 bytes).
 PDF statistics:
- 288 PDF objects out of 1000 (max. 8388607)
- 24 named destinations out of 1000 (max. 500000)
- 127 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 398 PDF objects out of 1000 (max. 8388607)
+ 30 named destinations out of 1000 (max. 500000)
+ 142 words of extra memory for PDF output out of 10000 (max. 10000000)
 
