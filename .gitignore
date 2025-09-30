@@ -1,0 +1,14 @@
+# LaTeX build
+Trabajo/build/
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+!Trabajo/build/hw_2_barocio.pdf
+
+# Autosaves / temporales
+*.asv
+*.autosave
