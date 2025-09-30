@@ -1,12 +1,7 @@
 # LaTeX build
-Trabajo/build/
-*.aux
-*.log
-*.out
-*.fls
-*.fdb_latexmk
-*.synctex.gz
-
+# Ignora todo el build...
+Trabajo/build/*
+# ...pero NO ignores este PDF
 !Trabajo/build/hw_2_barocio.pdf
 
 # Autosaves / temporales
