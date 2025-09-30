@@ -40,19 +40,19 @@
 
 
 \author{
-\IEEEauthorblockN{José de Jesús Reyes Ramírez\IEEEauthorrefmark{1},
-Yosniel\IEEEauthorrefmark{2},
-Luis\IEEEauthorrefmark{3},
-Gary\IEEEauthorrefmark{4},
-Aylem\IEEEauthorrefmark{5}}
+\IEEEauthorblockN{Yosniel Agüero\IEEEauthorrefmark{1},
+José de Jesús Reyes Ramírez\IEEEauthorrefmark{2},
+Aylem Velazquez\IEEEauthorrefmark{3},
+Gary Sosa\IEEEauthorrefmark{4},
+Luis Viera\IEEEauthorrefmark{5}}
 \IEEEauthorblockA{\textit{Universidad de Guadalajara, CUCEI} \\
 \textit{Maestría en Ciencias en Ingeniería Eléctrica} \\
 Guadalajara, Jalisco, México \\
-\IEEEauthorrefmark{1}jose.reyes0963@alumnos.udg.mx,
-\IEEEauthorrefmark{2}@alumnos.udg.mx,
-\IEEEauthorrefmark{3}@alumnos.udg.mx,
-\IEEEauthorrefmark{4}a@alumnos.udg.mx,
-\IEEEauthorrefmark{5}@alumnos.udg.mx}
+\IEEEauthorrefmark{1}yosniel.aguero9368,
+\IEEEauthorrefmark{2}jose.reyes0963,
+\IEEEauthorrefmark{3}aylem.velazquez7287,
+\IEEEauthorrefmark{4}gary.sosa9369,
+\IEEEauthorrefmark{5}luis.viera7283@alumnos.udg.mx}
 }
 
 
@@ -83,9 +83,9 @@ Existen principalmente 2 pruebas para la determinación de parámetros de un gen
 
 La prueba de respuesta en frecuencia consiste en aplicar una corriente con frecuencias que varíen en el rango de 0.001 Hz a 1 kHz, la cual es aproximadamente del \% de la corriente nominal. Usando los datos de la respuesta en frecuencia obtenidos de la prueba se determinan parámetros estándar de la máquina, es decir, las constantes de tiempo y las reactancias sincronas, transitorias y subtransitorias de los ejes directo y en cuadratura.
 
-El método de rechazo de carga consiste en realizar pruebaas de rechazo de carga en dos puntos operativos, donde las componentes de corriente sólo existan en el eje de interés. La prueba en el eje directo se realiza subexcitando el generador, por lo que debe estar consumiendo potencia reactiva de la red y la potencia activa debe ser despreciable, debido a la excitación insuficiente. Lo cual garantiza la obtención de parámetros no saturados y evita sobretensiones indeseadas durante la prueba. Los datos que permite obtener la prueba en el eje directo son $x_d$, $x^{'}_d$, $x^{''}_d$, $T^{'}_{do}$ y $T^{''}_{do}$.
+El método de rechazo de carga consiste en realizar pruebas de rechazo de carga en dos puntos operativos, donde las componentes de corriente sólo existan en el eje de interés. %La prueba en el eje directo se realiza subexcitando el generador, por lo que debe estar consumiendo potencia reactiva de la red y la potencia activa debe ser despreciable, debido a la excitación insuficiente. Lo cual garantiza la obtención de parámetros no saturados y evita sobretensiones indeseadas durante la prueba. Los datos que permite obtener la prueba en el eje directo son $x_d$, $x^{'}_d$, $x^{''}_d$, $T^{'}_{do}$ y $T^{''}_{do}$.
 
-La prueba en el eje de cuadratura se realiza encontrando un punto de carga en el cual el valor absoluto del ángulo del factor de potencia sea igual al ángulo de potencia, esto con el generador subexcitado.
+%La prueba en el eje de cuadratura se realiza encontrando un punto de carga en el cual el valor absoluto del ángulo del factor de potencia sea igual al ángulo de potencia, esto con el generador subexcitado.
 
 
 \section{Pruebas de Rechazo de Carga para Determinación de Parámetros de Generadores Síncronos} 
@@ -128,7 +128,7 @@ Para determinar los parámetros del generador se utilizó como base el esquema m
 
 \subsection{Prueba de rechazo de carga en el eje $-d-$}
 
-Para esta prueba se verifica antes del rechazo de carga que $P_0=0\text{ pu}$, $Q_0=0.1239\text{ pu}$ (capacitive load),
+Para esta prueba se verifica antes del rechazo de carga que $P_0=0\text{ pu}$, $Q_0=0.1239\text{ pu}$,
 $V_{t_0}=1\text{ pu}$, $i_{t_0}=0.1239\text{ pu}$ y $v_f=0.87\text{ pu}$.
 
 Para el rechazo de carga en $t=25\text{ s}$, se obtiene el comportamiento para la tensión
@@ -153,7 +153,8 @@ x''_{d} = \frac{A}{i_{t_0}} = \frac{1 - 0.97770}{0.1239} = 0.18\text{ pu}\\
 \end{gather*}
 
 Para determinar las constantes de tiempo de circuito abierto se utiliza la curva de corriente de campo
-obtenida durante el rechazo de carga mostrado en la Fig. \ref{fig:fig2}
+obtenida durante el rechazo de carga mostrado en la Fig. \ref{fig:fig2}, donde $T'_{do}$ le pertenece a $h_2$ y a $T''_{do}$ le pertenece a $h_1$,
+donde se obtiene que $T'_{do} = 3.8955\text{ s}$ y $T''_{do} = 0.0245\text{ s}$, que es el instante donde las constentes decrecen a $1/e \approx 0.368$ de su valor inicial.\cite{IEEE115,IEEE1110}
 
 \begin{figure}[H]
     \centering
@@ -163,14 +164,12 @@ obtenida durante el rechazo de carga mostrado en la Fig. \ref{fig:fig2}
 \end{figure}
 
 \subsection{Prueba de rechazo de carga en el eje $-q-$}
-
 Para esta prueba se verifica antes del rechazo de carga que $P_0 = 0.6249\text{ pu}$, $Q_0 = 0.3054\text{ pu}$ (carga
 capacitiva), $V_{t_0} = 1\text{ pu}$, $i_{t_0} = i_{q_0} = 0.6665\text{ pu}$, $v_f = 0.87\text{ pu}$, $\delta_0 = \varphi_0 = 26.05^{\circ}$.
 
-
 Durante esta prueba se obtiene el comportamiento para $\omega_r$ y $V_t$ mostrados en las Fig. \ref{fig:subfigs} respectivamente.
 
-\begin{figure}[H]
+\begin{figure}[ht]
     \centering
     \begin{subfigure}
         \centering
@@ -205,7 +204,7 @@ x''_q = \frac{\sqrt{A^2-C^2}-\sqrt{A^2-B^2}}{i_{q_0}}=\cdots\\
 \cdots= \frac{\sqrt{1^2-0.9065^2}-\sqrt{1^2-0.9666^2}}{0.6665} = 0.2489\text{ pu}\\
 \end{gather*}
 
-\subsection{Prueba de rechazo de carga en el eje arbitrario}.
+\subsection{Prueba de rechazo de carga en el eje arbitrario}
 
 Las cantidades electricas en el instante antesa que se realiza el rechazo de carga son: $P_0 = 0.8437pu$, $Q_0 = 0.5222pu$, $V_t = 1.0003pu$, $i_{t0} = 0.5729pu$, $v_f = 1.7688pu$, $\delta_0 = 20.8946$.
 Usando las expresiones dadas em ***, en los datos de las Fig.\ref{fig:subfigs1}, los parametros $x_q$ y $x''_q$ se pueden calcular de la siguiente manera:
@@ -240,8 +239,18 @@ Usando las expresiones dadas em ***, en los datos de las Fig.\ref{fig:subfigs1},
     \label{fig:subfigs1}
 \end{figure}
 
-\subsection{Resultados generales}
+La constente de tiempo $T''_{qo}$ se obtiene de la curva de voltaje mostrada en la Fig. \ref{fig:subfigs1}, que es el instante donde se 
+cumple que $v_q = V_{\infty} + 0.368(v_q(t_0)-V_\infty)$, donde $V_\infty = 0$ y $v_q(t_0) = h$, donde se obtiene $T''_q = 0.0333$.
 
+\subsection{Resultados generales}
+En la Tabla \ref{tab:result} se muestran los resultados obtenidos de las pruebas de rechazo de carga en el eje $-d-$, eje $-q-$ y eje arbitrario, comparados con los valores de diseño del generador dados por \cite{pequena}.
+
+Los valores de $T'_d$, $T''_d$ y $T''_q$ se obtienen usando las siguientes expresiones:
+\begin{gather}
+    T'_d = x'_d\frac{T'_{do}}{x'_d}\\
+    T''_d = T''_{do}\frac{x''_d T'_{do}}{x_d T'_d} \\
+    T''_q = \frac{x''_q}{x_q}  T'_{do}
+\end{gather}
 
 \setlength{\extrarowheight}{2pt} % eleva todas las filas
 \begin{table}[ht]
@@ -277,6 +286,7 @@ $T''_d$ & --     & --     & --     & 0.0135 & 0.0140 \\
 $T''_q$ & --     & --     & --     & 0.0131 & 0.0132 \\
 \bottomrule
 \end{tabular}
+\label{tab:result}
 \end{table}
 
 
@@ -284,8 +294,22 @@ $T''_q$ & --     & --     & --     & 0.0131 & 0.0132 \\
 Se concluye que 
 
 \begin{thebibliography}{plain}
-\bibitem{b1} M. H. Rashid, Power Electronics: Devices, Circuits \& Applications, Pearson Education, 2013.
-\bibitem{b2} Mohan N., Undeland T. M., Robbins W. P. (2002) Power Electronics: Converters, Applications, and Design, Wiley.
+
+\bibitem{IEEE115}
+IEEE Std 115, \emph{IEEE Guide: Test Procedures for Synchronous Machines Part I - Acceptance and Performance Testing Part II - Test Procedures and Parameter Determination for Dynamic Analysis}, IEEE, 1995.
+
+\bibitem{IEEE1110}
+IEEE Std 1110, \emph{Guide for Synchronous Generator Modeling Practices and Applications in Power System Stability Analyses}, IEEE, 2002.
+
+\bibitem{kundur}
+P. Kundur, \emph{Power System Stability and Control}, McGraw-Hill, New York, USA, 1994.
+
+\bibitem{pequena}
+J.C. Pequenna and E. Ruppert, \emph{Sobre a Determina\c{c}\~ao de Par\^ametros de Geradores S\'incronos para Estudos de Comportamento Din\^amico de Sistemas El\'etricos}, Master Thesis, FEEC/UNICAMP, Brazil, 2009.
+
+\bibitem{Pequena2010}
+J. C. Pequenna Suni, E. Ruppert, and F. Fajoni, ``A guide for Synchronous Generator Parameters Determination Using Dynamic Simulations Based on IEEE Standards,'' in \emph{Proc. XIX Int. Conf. on Electrical Machines (ICEM)}, Rome, Italy, 2010.
+
 \end{thebibliography}
 
 \end{document}
