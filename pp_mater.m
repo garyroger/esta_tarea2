@@ -126,11 +126,9 @@ ylim(ax_inset, [ymin ymax]);
 %----------------- figura 2 ---------------------
 f2 = figure(2); clf
 set(f2,'Units','inches','Position',[1 1 fig_w fig_h],'PaperPositionMode','auto');
-
-ax2 = axes('Parent',f2);
-set(ax2,'Color','w'); hold(ax2,'on'); grid(ax2,'on');
-
-plot(ax2,t, i_fd, 'LineWidth',1.5);
+axes(gca);
+plot(t, i_fd, 'LineWidth',1.5); hold on;
+grid on;
 
 t0 = 25;
 t1 = 25.01;
@@ -159,21 +157,21 @@ y3 = m*t0 + b;
 x2_ifd = [t0 t1];
 h2_ifd = [y3 y1];
 
-scatter(ax2,[x1_ifd x2_ifd], [h1_ifd h2_ifd], 20, 'r', 'filled');
-plot(ax2,x1_ifd, h1_ifd, '--r', 'LineWidth',1.2);
-plot(ax2,x2_ifd, h2_ifd, '--r', 'LineWidth',1.2);
+scatter([x1_ifd x2_ifd], [h1_ifd h2_ifd], 20, 'r', 'filled');
+plot(x1_ifd, h1_ifd, '--r', 'LineWidth',1.2);
+plot(x2_ifd, h2_ifd, '--r', 'LineWidth',1.2);
 
-yline(ax2,0.87,'--','h = 0.87', 'LabelHorizontalAlignment','right','LabelVerticalAlignment','top',"FontName","Times New Roman","FontSize",10,"Color","k");
-yline(ax2,h1_ifd(1),'--',sprintf('h_1 = %.4f', h1_ifd(1)), 'LabelHorizontalAlignment','left','LabelVerticalAlignment','bottom',"FontName","Times New Roman","FontSize",10,"Color","k");
-yline(ax2,h2_ifd(1),'--',sprintf('h_2 = %.4f', h2_ifd(1)), 'LabelHorizontalAlignment','left','LabelVerticalAlignment','top',"FontName","Times New Roman","FontSize",10,"Color","k");
+yline(0.87,'--','h = 0.87', 'LabelHorizontalAlignment','right','LabelVerticalAlignment','top',"FontName","Times New Roman","FontSize",10,"Color","k");
+yline(h1_ifd(1),'--',sprintf('h_1 = %.4f', h1_ifd(1)), 'LabelHorizontalAlignment','left','LabelVerticalAlignment','bottom',"FontName","Times New Roman","FontSize",10,"Color","k");
+yline(h2_ifd(1),'--',sprintf('h_2 = %.4f', h2_ifd(1)), 'LabelHorizontalAlignment','left','LabelVerticalAlignment','top',"FontName","Times New Roman","FontSize",10,"Color","k");
 
 xlabel('tiempo [s]');
 ylabel('$i_{fd}$ [pu]');
-xlim(ax2,[24.95 25.7]); ylim(ax2,[0.85 1]);
+xlim([24.95 25.7]); ylim([0.85 1]);
 
 
-exportgraphics(f1,'fig1.pdf','ContentType','vector','BackgroundColor','white');
-exportgraphics(f2,'fig2.pdf','ContentType','vector','BackgroundColor','white');
+% exportgraphics(f1,'fig1.pdf','ContentType','vector','BackgroundColor','white');
+%exportgraphics(f2,'fig2.pdf','ContentType','vector','BackgroundColor','white');
 
 t0 = 25.0;          % instante del evento
 Iinf = 0.870;       % valor asintótico (pu)
@@ -257,7 +255,7 @@ lw_main = 1.2;   % grosor de linea
 ms_main = 5;     % tamano de marcador
 
 % tamano de figura en pulgadas (single column ~ 5.5in x 2in)
-fig_w = 5.5; fig_h = 2;
+fig_w = 5.5; fig_h = 1.2;
 %----------------- figura 3 ---------------------
 f3 = figure(3); clf;
 axes(gca);
@@ -266,7 +264,7 @@ plot(t,v_tq,"LineWidth",1.5); hold on
 grid on;
 xlim([24 30]);
 ylim([0.8 1.05]);
-xlabel("tiempo [s]");
+%xlabel("tiempo [s]");
 ylabel('$V_t$ [pu]');
 
 %----------------- figura 4 ---------------------
@@ -277,10 +275,11 @@ plot(t, w, 'LineWidth',1.5);
 grid on;
 xlim([24 30]);
 ylim([0.99 1.005]);
-xlabel("tiempo [s]");
+%xlabel("tiempo [s]");
 ylabel('$W_r$ [pu]');
 
 %----------------- figura 5 ---------------------
+fig_w = 5.5; fig_h = 2;
 f5 = figure(5); clf
 axes(gca);
 set(f5,'Units','inches','Position',[1 1 fig_w fig_h],'PaperPositionMode','auto');
@@ -331,9 +330,9 @@ plot(x1_vw, h1_vw, '--r', 'LineWidth', 0.75)
 xlim(ax_inset, [t0 t1]);
 ylim(ax_inset, [ymin ymax]);
 
-exportgraphics(f3,'fig3.pdf','ContentType','vector','BackgroundColor','white');
-exportgraphics(f4,'fig4.pdf','ContentType','vector','BackgroundColor','white');
-exportgraphics(f5,'fig5.pdf','ContentType','vector','BackgroundColor','white');
+%exportgraphics(f3,'fig3.pdf','ContentType','vector','BackgroundColor','white');
+%exportgraphics(f4,'fig4.pdf','ContentType','vector','BackgroundColor','white');
+%exportgraphics(f5,'fig5.pdf','ContentType','vector','BackgroundColor','white');
 
 %%
 vt_sen_array = out.vt_sen;
@@ -471,7 +470,7 @@ Tpp = t_cruce_h - t0;  % T''qo
 fprintf('Nivel 0.368*h = %.4f pu se cruza en t = %.4f s\n', nivel_h, t_cruce_h);
 fprintf('T''''qo (subtransitoria) = %.4f s\n', Tpp);
 
-exportgraphics(f6,'fig6.pdf','ContentType','vector','BackgroundColor','white');
-exportgraphics(f7,'fig7.pdf','ContentType','vector','BackgroundColor','white');
-exportgraphics(f8,'fig8.pdf','ContentType','vector','BackgroundColor','white');
+%exportgraphics(f6,'fig6.pdf','ContentType','vector','BackgroundColor','white');
+%exportgraphics(f7,'fig7.pdf','ContentType','vector','BackgroundColor','white');
+%exportgraphics(f8,'fig8.pdf','ContentType','vector','BackgroundColor','white');
 
