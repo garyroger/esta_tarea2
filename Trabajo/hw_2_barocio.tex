@@ -32,9 +32,11 @@
 
 \newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}
 %\hyphenation{ }
+%\renewcommand{abstract}{Resumen}
+\renewcommand{\refname}{Referencias}
 
 \begin{document}
-\renewcommand{abstract}{Resumen}
+
 
 % Do not put math or special symbols in the title.
 \title{Determinación de parametros del generador síncrono usando pruebas de simulación de rechazo de carga}
@@ -82,7 +84,7 @@ Estos valores constituyen la base para la elaboración de modelos dinámicos pre
 
 Existen principalmente 2 pruebas para la determinación de parámetros de un generador síncrono, los cuales han obtenido importancia debido al bajo nivel de riesgo y a su facilidad, los cuales son el método de respuesta en frecuencia y el método de rechazo de carga.
 
-La prueba de respuesta en frecuencia consiste en aplicar una corriente con frecuencias que varíen en el rango de 0.001 Hz a 1 kHz, la cual es aproximadamente del \% de la corriente nominal. Usando los datos de la respuesta en frecuencia obtenidos de la prueba se determinan parámetros estándar de la máquina, es decir, las constantes de tiempo y las reactancias sincronas, transitorias y subtransitorias de los ejes directo y en cuadratura.
+%La prueba de respuesta en frecuencia consiste en aplicar una corriente con frecuencias que varíen en el rango de 0.001 Hz a 1 kHz, la cual es aproximadamente del \% de la corriente nominal. Usando los datos de la respuesta en frecuencia obtenidos de la prueba se determinan parámetros estándar de la máquina, es decir, las constantes de tiempo y las reactancias sincronas, transitorias y subtransitorias de los ejes directo y en cuadratura.
 
 El método de rechazo de carga consiste en realizar pruebas de rechazo de carga en dos puntos operativos, donde las componentes de corriente sólo existan en el eje de interés. %La prueba en el eje directo se realiza subexcitando el generador, por lo que debe estar consumiendo potencia reactiva de la red y la potencia activa debe ser despreciable, debido a la excitación insuficiente. Lo cual garantiza la obtención de parámetros no saturados y evita sobretensiones indeseadas durante la prueba. Los datos que permite obtener la prueba en el eje directo son $x_d$, $x^{'}_d$, $x^{''}_d$, $T^{'}_{do}$ y $T^{''}_{do}$.
 
