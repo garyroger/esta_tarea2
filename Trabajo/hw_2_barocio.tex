@@ -32,27 +32,30 @@
 
 \newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}
 %\hyphenation{ }
+%\renewcommand{abstract}{Resumen}
+\renewcommand{\refname}{Referencias}
 
 \begin{document}
+
 
 % Do not put math or special symbols in the title.
 \title{Determinación de parametros del generador síncrono usando pruebas de simulación de rechazo de carga}
 
 
 \author{
-\IEEEauthorblockN{José de Jesús Reyes Ramírez\IEEEauthorrefmark{1},
-Yosniel\IEEEauthorrefmark{2},
-Luis\IEEEauthorrefmark{3},
-Gary\IEEEauthorrefmark{4},
-Aylem\IEEEauthorrefmark{5}}
+\IEEEauthorblockN{Yosniel Agüero\IEEEauthorrefmark{1},
+José Reyes\IEEEauthorrefmark{2},
+Aylem Velazquez\IEEEauthorrefmark{3},
+Gary Sosa\IEEEauthorrefmark{4},
+Luis Viera\IEEEauthorrefmark{5}}
 \IEEEauthorblockA{\textit{Universidad de Guadalajara, CUCEI} \\
 \textit{Maestría en Ciencias en Ingeniería Eléctrica} \\
 Guadalajara, Jalisco, México \\
-\IEEEauthorrefmark{1}jose.reyes0963@alumnos.udg.mx,
-\IEEEauthorrefmark{2}@alumnos.udg.mx,
-\IEEEauthorrefmark{3}@alumnos.udg.mx,
-\IEEEauthorrefmark{4}a@alumnos.udg.mx,
-\IEEEauthorrefmark{5}@alumnos.udg.mx}
+\IEEEauthorrefmark{1}yosniel.aguero9368,
+\IEEEauthorrefmark{2}jose.reyes0963,
+\IEEEauthorrefmark{3}aylem.velazquez7287,
+\IEEEauthorrefmark{4}gary.sosa9369,
+\IEEEauthorrefmark{5}luis.viera7283@alumnos.udg.mx}
 }
 
 
@@ -71,22 +74,25 @@ Guadalajara, Jalisco, México \\
 \end{abstract}
 
 \section{Introducción}
-El generador síncrono es \dots
+El generador síncrono es una de las principales máquinas utilizadas en los sistemas eléctricos de potencia para la conversión de energía mecánica en energía eléctrica. Su comportamiento dinámico juega un papel fundamental en la estabilidad del sistema, especialmente durante perturbaciones, variaciones de carga o fallas. Por esta razón, el conocimiento detallado de sus parámetros eléctricos es esencial para el modelado, simulación y análisis del sistema en condiciones transitorias.
 
-Los parámetros fundamentales del generador síncrono son: $r_s$, $r_{fd}$, $r_{kd}$, $r_{kq1}$, $r_{kq2}$, $x_{Ls}$, $x_{1fd}$, $x_{lkd}$, $x_{lkq1}$, $x_{lkq2}$, $x_{md}$ y $x_{mq}$. Los cuales se calculan usando relaciones matemáticas.
+En el presente se muestra como obtener los parámetros estándar del generador síncrono de polos salientes, el cual es uno de los 2 tipos de máquinas síncronas, el cual es utilizado en plantas hidroeléctricas donde por lo general las turbinas operan a bajas velocidades de rotación; donde este tipo de generador es especialmente adecuado para este escenario debido a su estructura de rotor con polos salientes, que permite una eficiente generación de flujo magnético incluso a velocidades reducidas (entre 50 y 300 r/min).
 
-Los parámetros estándar del generador síncrono son las reactancias síncronas, las reactancias síncronas transitorias, las reactancias síncronas subtransitorias, las constantes de tiempo transitorias y subtransitorias en circuito abierto y las constantes de tiempo transitorias y subtransitorias en cortocircuito; es decir, $x_d$, $x_q$, $x^{'}_d$, $x^{'}_q$, $x^{''}_d$, $x^{''}_q$, $T^{'}_{do}$, $T^{'}_{qo}$, $T^{''}_{do}$, $T^{''}_{qo}$, $T^{'}_{d}$, $T^{'}_{q}$, $T^{''}_{d}$, $T^{''}_{q}$.
+Los parámetros fundamentales del generador síncrono son: $r_s$, $r_{fd}$, $r_{kd}$, $r_{kq1}$, $r_{kq2}$, $x_{Ls}$, $x_{1fd}$, $x_{lkd}$, $x_{lkq1}$, $x_{lkq2}$, $x_{md}$ y $x_{mq}$. Estos se determinan a partir de ensayos experimentales o mediante procedimientos de identificación basados en normas, los cuales permiten obtener un modelo representativo del comportamiento electromagnético de la máquina.
 
-La identificación de sus parámetros de estado permanente y transitorio es muy importante para el análisis de estabilidad, esto debido a \dots
+Los parámetros estándar del generador síncrono son las reactancias síncronas, las reactancias síncronas transitorias, las reactancias síncronas subtransitorias, las constantes de tiempo transitorias y subtransitorias en circuito abierto y las constantes de tiempo transitorias y subtransitorias en cortocircuito, es decir: $x_d$, $x_q$, $x'_d$, $x'_q$, $x''_d$, $x''_q$, $T'_{do}$, $T'_{qo}$, $T''_{do}$, $T''_{qo}$, $T'_{d}$, $T'_{q}$, $T''_{d}$, $T''_{q}$.
+
+Estos valores constituyen la base para la elaboración de modelos dinámicos precisos que permiten analizar la respuesta de la máquina bajo diferentes condiciones de operación y diseñar estrategias de control y protección más eficientes.
 
 Existen principalmente 2 pruebas para la determinación de parámetros de un generador síncrono, los cuales han obtenido importancia debido al bajo nivel de riesgo y a su facilidad, los cuales son el método de respuesta en frecuencia y el método de rechazo de carga.
 
-La prueba de respuesta en frecuencia consiste en aplicar una corriente con frecuencias que varíen en el rango de 0.001 Hz a 1 kHz, la cual es aproximadamente del \% de la corriente nominal. Usando los datos de la respuesta en frecuencia obtenidos de la prueba se determinan parámetros estándar de la máquina, es decir, las constantes de tiempo y las reactancias sincronas, transitorias y subtransitorias de los ejes directo y en cuadratura.
+%La prueba de respuesta en frecuencia consiste en aplicar una corriente con frecuencias que varíen en el rango de 0.001 Hz a 1 kHz, la cual es aproximadamente del \% de la corriente nominal. Usando los datos de la respuesta en frecuencia obtenidos de la prueba se determinan parámetros estándar de la máquina, es decir, las constantes de tiempo y las reactancias sincronas, transitorias y subtransitorias de los ejes directo y en cuadratura.
 
-El método de rechazo de carga consiste en realizar pruebaas de rechazo de carga en dos puntos operativos, donde las componentes de corriente sólo existan en el eje de interés. La prueba en el eje directo se realiza subexcitando el generador, por lo que debe estar consumiendo potencia reactiva de la red y la potencia activa debe ser despreciable, debido a la excitación insuficiente. Lo cual garantiza la obtención de parámetros no saturados y evita sobretensiones indeseadas durante la prueba. Los datos que permite obtener la prueba en el eje directo son $x_d$, $x^{'}_d$, $x^{''}_d$, $T^{'}_{do}$ y $T^{''}_{do}$.
+El método de rechazo de carga consiste en realizar pruebas de rechazo de carga en dos puntos operativos, donde las componentes de corriente sólo existan en el eje de interés. %La prueba en el eje directo se realiza subexcitando el generador, por lo que debe estar consumiendo potencia reactiva de la red y la potencia activa debe ser despreciable, debido a la excitación insuficiente. Lo cual garantiza la obtención de parámetros no saturados y evita sobretensiones indeseadas durante la prueba. Los datos que permite obtener la prueba en el eje directo son $x_d$, $x^{'}_d$, $x^{''}_d$, $T^{'}_{do}$ y $T^{''}_{do}$.
 
-La prueba en el eje de cuadratura se realiza encontrando un punto de carga en el cual el valor absoluto del ángulo del factor de potencia sea igual al ángulo de potencia, esto con el generador subexcitado.
+%La prueba en el eje de cuadratura se realiza encontrando un punto de carga en el cual el valor absoluto del ángulo del factor de potencia sea igual al ángulo de potencia, esto con el generador subexcitado.
 
+En este trabajo se implementan las pruebas de rechazo de carga en el eje directo, en el eje en cuadratura y en un eje arbitrario, para la obtención de los parámetros estándar del generador síncrono de polos salientes, utilizando como base las normas IEEE 115 \cite{IEEE115} y IEEE 1110 \cite{IEEE1110}, y el procedimiento propuesto por Pequenna et al. \cite{pequena,Pequena2010} a travez de simualciones en el software Matlab-Simulink.
 
 \section{Pruebas de Rechazo de Carga para Determinación de Parámetros de Generadores Síncronos} 
 
@@ -97,24 +103,17 @@ la tensión de campo y registrando la respuesta transitoria de las variables el�
 
 \subsection{Prueba de rechazo de carga en el eje directo $-d-$}
 
-La prueba de rechazo de carga en el eje $-d-$ se ejecuta con el generador entregando potencia activa nula y potencia reactiva máxima,
-condiciones bajo las cuales la corriente de armadura se alinea exclusivamente con el eje directo.
+La prueba de rechazo de carga en el eje $-d-$ se ejecuta con el generador entregando potencia activa nula y potencia reactiva máxima, condiciones bajo las cuales la corriente de armadura se alinea exclusivamente con el eje directo.
 Durante el rechazo de carga, se registra el decaimiento transitorio de la tensión terminal, cuyo análisis
-permite determinar las reactancias síncrona, transitoria y subtransitoria del eje directo ($x_d, x^{'}_d, x^{''}_d$) así como las constantes
-de tiempo en circuito abierto ($T^{'}_{qo}$, $T^{''}_{do}$)
+permite determinar las reactancias síncrona, transitoria y subtransitoria del eje directo ($x_d, x'_d, x''_d$), así como las constantes de tiempo en circuito abierto ($T'_{qo}$, $T''_{do}$).
 
 \subsection{Prueba de rechazo de carga en el eje en cuadratura $-q-$}
 
-Para esta prueba, se ajusta la operación del generador de modo que el ángulo de potencia coincida con el ángulo del factor de potencia,
-logrando que la corriente de armadura posea únicamente componente en cuadratura. El análisis del transitorio de tensión resultante del
-rechazo de carga permite calcular la reactancia síncrona y subtransitoria del eje $q$ ($x_q, x^{''}_q$)
+Para esta prueba, se ajusta la operación del generador de modo que el ángulo de potencia coincida con el ángulo del factor de potencia, logrando que la corriente de armadura posea únicamente componente en cuadratura. El análisis del transitorio de tensión resultante del rechazo de carga permite calcular la reactancia síncrona y subtransitoria del eje $q$ ($x_q, x''_q$).
 
 \subsection{Prueba de rechazo de carga en el eje arbitrario}
 
-Esta prueba representa la metodología más comprehensiva, ya que se realiza con el generador operando en condiciones de carga arbitrarias,
-con componentes de corriente tanto en el eje directo como en cuadratura. El procesamiento de la respuesta transitoria, particularmente de
-la componente en cuadratura de la tensión y corriente, permite determinar el conjunto completo de parámetros del eje q 
-($x_q, x^{'}_q, x^{''}_q, T^{'}_{qo}$, $T^{''}_{do}$)
+Esta prueba representa la metodología más comprehensiva, ya que se realiza con el generador operando en condiciones de carga arbitrarias, con componentes de corriente tanto en el eje directo como en cuadratura. El procesamiento de la respuesta transitoria, particularmente de la componente en cuadratura de la tensión y corriente, permite determinar el conjunto completo de parámetros del eje q ($x_q, x'_q, x''_q, T'_{qo}$, $T''_{do}$).
 
 \section{Simulación y resultados obtenidos}
 Para determinar los parámetros del generador se utilizó como base el esquema mostrado en la Fig. \ref{fig:Modelo_Simulink}
@@ -122,13 +121,13 @@ Para determinar los parámetros del generador se utilizó como base el esquema m
 \begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth]{Fig/Modelo_Simulink.pdf}
-    \caption{Modelo base implementado en Simulink}
+    \caption{Modelo base implementado en Simulink.}
     \label{fig:Modelo_Simulink}
 \end{figure}
 
 \subsection{Prueba de rechazo de carga en el eje $-d-$}
 
-Para esta prueba se verifica antes del rechazo de carga que $P_0=0\text{ pu}$, $Q_0=0.1239\text{ pu}$ (capacitive load),
+Para esta prueba se verifica antes del rechazo de carga que $P_0=0\text{ pu}$, $Q_0=0.1239\text{ pu}$,
 $V_{t_0}=1\text{ pu}$, $i_{t_0}=0.1239\text{ pu}$ y $v_f=0.87\text{ pu}$.
 
 Para el rechazo de carga en $t=25\text{ s}$, se obtiene el comportamiento para la tensión
@@ -137,7 +136,7 @@ en los terminales de generador ($v_t$) mostrados en la Fig. \ref{fig:fig1}.
 \begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth]{Fig/fig1.pdf}
-    \caption{Voltaje en terminales de la máquina durante el rechazo de carga}
+    \caption{Voltaje en terminales de la máquina durante el rechazo de carga.}
     \label{fig:fig1}
 \end{figure}
 
@@ -153,24 +152,23 @@ x''_{d} = \frac{A}{i_{t_0}} = \frac{1 - 0.97770}{0.1239} = 0.18\text{ pu}\\
 \end{gather*}
 
 Para determinar las constantes de tiempo de circuito abierto se utiliza la curva de corriente de campo
-obtenida durante el rechazo de carga mostrado en la Fig. \ref{fig:fig2}
+obtenida durante el rechazo de carga mostrado en la Fig. \ref{fig:fig2}, donde $T'_{do}$ le pertenece a $h_2$ y a $T''_{do}$ le pertenece a $h_1$,
+donde se obtiene que $T'_{do} = 3.8955\text{ s}$ y $T''_{do} = 0.0245\text{ s}$, que es el instante donde las constentes decrecen a $1/e \approx 0.368$ de su valor inicial.\cite{IEEE115,IEEE1110}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth]{Fig/fig2.pdf}
-    \caption{Corriente de exitación durante el rechazo de carga}
+    \caption{Corriente de exitación durante el rechazo de carga.}
     \label{fig:fig2}
 \end{figure}
 
 \subsection{Prueba de rechazo de carga en el eje $-q-$}
-
 Para esta prueba se verifica antes del rechazo de carga que $P_0 = 0.6249\text{ pu}$, $Q_0 = 0.3054\text{ pu}$ (carga
 capacitiva), $V_{t_0} = 1\text{ pu}$, $i_{t_0} = i_{q_0} = 0.6665\text{ pu}$, $v_f = 0.87\text{ pu}$, $\delta_0 = \varphi_0 = 26.05^{\circ}$.
 
-
 Durante esta prueba se obtiene el comportamiento para $\omega_r$ y $V_t$ mostrados en las Fig. \ref{fig:subfigs} respectivamente.
 
-\begin{figure}[H]
+\begin{figure}[ht]
     \centering
     \begin{subfigure}
         \centering
@@ -189,10 +187,9 @@ Durante esta prueba se obtiene el comportamiento para $\omega_r$ y $V_t$ mostrad
     \begin{subfigure}
         \centering
         \includegraphics[width=\linewidth]{Fig/fig5.pdf}
-        
         \label{fig:fig5}
     \end{subfigure}
-    \caption{Comportamiento de $V_t$ y $\omega_r$ durante la prueba de rechazo de carga en el eje $-q-$}
+    \caption{Comportamiento de $V_t$ y $\omega_r$ durante la prueba de rechazo de carga en el eje $-q-$.}
     \label{fig:subfigs}
 \end{figure}
 
@@ -205,14 +202,14 @@ x''_q = \frac{\sqrt{A^2-C^2}-\sqrt{A^2-B^2}}{i_{q_0}}=\cdots\\
 \cdots= \frac{\sqrt{1^2-0.9065^2}-\sqrt{1^2-0.9666^2}}{0.6665} = 0.2489\text{ pu}\\
 \end{gather*}
 
-\subsection{Prueba de rechazo de carga en el eje arbitrario}.
+\subsection{Prueba de rechazo de carga en el eje arbitrario}
 
-Las cantidades electricas en el instante antesa que se realiza el rechazo de carga son: $P_0 = 0.8437pu$, $Q_0 = 0.5222pu$, $V_t = 1.0003pu$, $i_{t0} = 0.5729pu$, $v_f = 1.7688pu$, $\delta_0 = 20.8946$.
-Usando las expresiones dadas em ***, en los datos de las Fig.\ref{fig:subfigs1}, los parametros $x_q$ y $x''_q$ se pueden calcular de la siguiente manera:
+Las cantidades eléctricas en el instante antes que se realiza el rechazo de carga son: $P_0 = 0.8437pu$, $Q_0 = 0.5222pu$, $V_t = 1.0003pu$, $i_{t0} = 0.5729pu$, $v_f = 1.7688pu$, $\delta_0 = 20.8946$.
+Usando las expresiones dadas en \cite{Pequena2010}, en los datos de las Fig.\ref{fig:subfigs1}, los parámetros $x_q$ y $x''_q$ se pueden calcular de la siguiente manera:
 
 \begin{gather}
-    x_q = \frac{(V_t\sin(\delta))_0}{i_{qo}}\\
-    x''_q = x_q\frac{h}{i_{qo}}
+    x_q = \frac{(V_t\sin(\delta))_0}{i_{qo}} = \frac{0.3566}{5729} = 0.6224\\
+    x''_q = x_q\frac{h}{i_{qo}} = 0.6224\times\frac{0.2425}{0.5729} = 0.1991
 \end{gather}
 
 \begin{figure}[ht]
@@ -236,21 +233,31 @@ Usando las expresiones dadas em ***, en los datos de las Fig.\ref{fig:subfigs1},
         \includegraphics[width=\linewidth]{Fig/fig8.pdf}    
         \label{fig:fig8}
     \end{subfigure}
-    \caption{Comportamiento de $V_t$ y $\delta_0$ durante la prueba de rechazo de carga en el eje arbitrario}
+    \caption{Comportamiento de $V_t$ y $\delta_0$ durante la prueba de rechazo de carga en el eje arbitrario.}
     \label{fig:subfigs1}
 \end{figure}
 
-\subsection{Resultados generales}
+La constente de tiempo $T''_{qo}$ se obtiene de la curva de voltaje mostrada en la Fig. \ref{fig:subfigs1}, que es el instante donde se 
+cumple que $v_q = V_{\infty} + 0.368(v_q(t_0)-V_\infty)$, donde $V_\infty = 0$ y $v_q(t_0) = h$, donde se obtiene $T''_q = 0.0333$.
 
+\subsection{Resultados generales}
+En la Tabla \ref{tab:result} se muestran los resultados obtenidos de las pruebas de rechazo de carga en el eje $-d-$, eje $-q-$ y eje arbitrario; comparados con los valores de diseño del generador dados por \cite{pequena}.
+
+Los valores de $T'_d$, $T''_d$ y $T''_q$ se obtienen usando las siguientes expresiones:
+\begin{gather}
+    T'_d = x'_d\frac{T'_{do}}{x'_d}\\
+    T''_d = T''_{do}\frac{x''_d T'_{do}}{x_d T'_d} \\
+    T''_q = \frac{x''_q}{x_q}  T'_{do}
+\end{gather}
 
 \setlength{\extrarowheight}{2pt} % eleva todas las filas
 \begin{table}[ht]
 \centering
-\caption{Parametros en p.u.}
+\caption{Parámetros en p.u.}
 \setlength{\tabcolsep}{6pt}
 \begin{tabular}{C{1cm} C{1cm} C{1cm} C{1cm} C{1cm} C{1.25cm}}
 \toprule
-\textbf{Parametro} &
+\textbf{Parámetro} &
 \textbf{Rechazo de carga en el eje directo} &
 \textbf{Rechazo de carga en el eje directo} &
 \textbf{Rechazo de carga en eje arbitrario} &
@@ -277,15 +284,38 @@ $T''_d$ & --     & --     & --     & 0.0135 & 0.0140 \\
 $T''_q$ & --     & --     & --     & 0.0131 & 0.0132 \\
 \bottomrule
 \end{tabular}
+\label{tab:result}
 \end{table}
 
 
-\section{Conclusiones}
-Se concluye que 
+Como se observa en la Tabla \ref{tab:result}, al comparar los valores obtenidos mediante las simulaciones realizadas en Matlab/Simulink, se valida la precisión de las pruebas de rechazo de carga, y se verican las especificaciones del fabricante, ya que concuerdan con los valores de sieño.
 
+\section{Conclusiones}
+
+Los parámetros obtenidos tienen un impacto directo en el diseño, operación y estabilidad de la máquina síncrona, su importancia radica en que permiten construir modelos mátemáticos confiables que simulan el comportamiento real del generador bajo perturbaciones. Además, parámetros como las constantes de tiempo son escenciales para el ajuste de sistemas de excitación, controles y protecciones, garantizando su funcionamiento adecuado.
+
+Los parámetros obtenidos en las pruebas permiten realizar analisis de estabilidad confiables, integración segura de los generadores a la red, realizar análisis de estabilidad confiables, etc.
+
+En este trabajo se implemetaron y analizaron 3 ensayos de rechazo de carga: en el eje directo, en el eje en cuadratura y en un eje arbitrario;
+se lograron obtener valores de reactancias sincronas, transitorias y subtransitorias, así como las constantes de tiempo transitorias y subtransitorias en circuito abierto. Se concluye que los parámetros obtenidos concuerdan con los valores de diseño del generador, validando modelos dinámicos como una herramienta indispensable en el análisis
+ de estabilidad transitoria y en el diseño de sistemas de control y protección en maquinas síncronas.
 \begin{thebibliography}{plain}
-\bibitem{b1} M. H. Rashid, Power Electronics: Devices, Circuits \& Applications, Pearson Education, 2013.
-\bibitem{b2} Mohan N., Undeland T. M., Robbins W. P. (2002) Power Electronics: Converters, Applications, and Design, Wiley.
+
+\bibitem{IEEE115}
+IEEE Std 115, \emph{IEEE Guide: Test Procedures for Synchronous Machines Part I - Acceptance and Performance Testing Part II - Test Procedures and Parameter Determination for Dynamic Analysis}, IEEE, 1995.
+
+\bibitem{IEEE1110}
+IEEE Std 1110, \emph{Guide for Synchronous Generator Modeling Practices and Applications in Power System Stability Analyses}, IEEE, 2002.
+
+\bibitem{kundur}
+P. Kundur, \emph{Power System Stability and Control}, McGraw-Hill, New York, USA, 1994.
+
+\bibitem{pequena}
+J.C. Pequenna and E. Ruppert, \emph{Sobre a Determina\c{c}\~ao de Par\^ametros de Geradores S\'incronos para Estudos de Comportamento Din\^amico de Sistemas El\'etricos}, Master Thesis, FEEC/UNICAMP, Brazil, 2009.
+
+\bibitem{Pequena2010}
+J. C. Pequenna Suni, E. Ruppert, and F. Fajoni, ``A guide for Synchronous Generator Parameters Determination Using Dynamic Simulations Based on IEEE Standards,'' in \emph{Proc. XIX Int. Conf. on Electrical Machines (ICEM)}, Rome, Italy, 2010.
+
 \end{thebibliography}
 
 \end{document}

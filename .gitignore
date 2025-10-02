@@ -1,0 +1,9 @@
+# LaTeX build
+# Ignora todo el build...
+Trabajo/build/*
+# ...pero NO ignores este PDF
+!Trabajo/build/hw_2_barocio.pdf
+
+# Autosaves / temporales
+*.asv
+*.autosave

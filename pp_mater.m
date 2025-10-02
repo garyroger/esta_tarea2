@@ -10,6 +10,7 @@ i_fd_array = out.i_fd;
 t_id  = i_fd_array.Time;
 i_fd = i_fd_array.Data;
 
+t0 = 25;
 t1 = 25.2;
 t2 = 25.3;
 
@@ -88,9 +89,9 @@ plot(x2_vf, h2_vf, '--r', 'LineWidth', 0.75)
 % horizontal en v_t = 0.96 con etiqueta
 yline(0.87,'--','h = 0.87', ...
     'LabelHorizontalAlignment','left','LabelVerticalAlignment','top',"Color","k","FontName","Times New Roman","FontSize",10);
-yline(h1_vf(1),'--',sprintf('h_1 = %.5f', h1_vf(1)), ...
+yline(h1_vf(1),'--',sprintf('h_1 = %.4f', h1_vf(1)), ...
     'LabelHorizontalAlignment','left','LabelVerticalAlignment','bottom',"Color","k","FontName","Times New Roman","FontSize",10);
-yline(h2_vf(1),'--',sprintf('h_2 = %.5f', h2_vf(1)), ...
+yline(h2_vf(1),'--',sprintf('h_2 = %.4f', h2_vf(1)), ...
     'LabelHorizontalAlignment','left','LabelVerticalAlignment','top',"Color","k","FontName","Times New Roman","FontSize",10);
 xlabel("tiempo [s]");
 ylabel('$v_t$ [pu]');
@@ -126,11 +127,9 @@ ylim(ax_inset, [ymin ymax]);
 %----------------- figura 2 ---------------------
 f2 = figure(2); clf
 set(f2,'Units','inches','Position',[1 1 fig_w fig_h],'PaperPositionMode','auto');
-
-ax2 = axes('Parent',f2);
-set(ax2,'Color','w'); hold(ax2,'on'); grid(ax2,'on');
-
-plot(ax2,t, i_fd, 'LineWidth',1.5);
+axes(gca);
+plot(t, i_fd, 'LineWidth',1.5); hold on;
+grid on;
 
 t0 = 25;
 t1 = 25.01;
@@ -159,17 +158,17 @@ y3 = m*t0 + b;
 x2_ifd = [t0 t1];
 h2_ifd = [y3 y1];
 
-scatter(ax2,[x1_ifd x2_ifd], [h1_ifd h2_ifd], 20, 'r', 'filled');
-plot(ax2,x1_ifd, h1_ifd, '--r', 'LineWidth',1.2);
-plot(ax2,x2_ifd, h2_ifd, '--r', 'LineWidth',1.2);
+scatter([x1_ifd x2_ifd], [h1_ifd h2_ifd], 20, 'r', 'filled');
+plot(x1_ifd, h1_ifd, '--r', 'LineWidth',1.2);
+plot(x2_ifd, h2_ifd, '--r', 'LineWidth',1.2);
 
-yline(ax2,0.87,'--','h = 0.87', 'LabelHorizontalAlignment','right','LabelVerticalAlignment','top',"FontName","Times New Roman","FontSize",10,"Color","k");
-yline(ax2,h1_ifd(1),'--',sprintf('h_1 = %.4f', h1_ifd(1)), 'LabelHorizontalAlignment','left','LabelVerticalAlignment','bottom',"FontName","Times New Roman","FontSize",10,"Color","k");
-yline(ax2,h2_ifd(1),'--',sprintf('h_2 = %.4f', h2_ifd(1)), 'LabelHorizontalAlignment','left','LabelVerticalAlignment','top',"FontName","Times New Roman","FontSize",10,"Color","k");
+yline(0.87,'--','h = 0.87', 'LabelHorizontalAlignment','right','LabelVerticalAlignment','top',"FontName","Times New Roman","FontSize",10,"Color","k");
+yline(h1_ifd(1),'--',sprintf('h_1 = %.4f', h1_ifd(1)), 'LabelHorizontalAlignment','left','LabelVerticalAlignment','bottom',"FontName","Times New Roman","FontSize",10,"Color","k");
+yline(h2_ifd(1),'--',sprintf('h_2 = %.4f', h2_ifd(1)), 'LabelHorizontalAlignment','left','LabelVerticalAlignment','top',"FontName","Times New Roman","FontSize",10,"Color","k");
 
 xlabel('tiempo [s]');
 ylabel('$i_{fd}$ [pu]');
-xlim(ax2,[24.95 25.7]); ylim(ax2,[0.85 1]);
+xlim([24.95 25.7]); ylim([0.85 1]);
 
 
 exportgraphics(f1,'fig1.pdf','ContentType','vector','BackgroundColor','white');
@@ -257,7 +256,7 @@ lw_main = 1.2;   % grosor de linea
 ms_main = 5;     % tamano de marcador
 
 % tamano de figura en pulgadas (single column ~ 5.5in x 2in)
-fig_w = 5.5; fig_h = 2;
+fig_w = 5.5; fig_h = 1.2;
 %----------------- figura 3 ---------------------
 f3 = figure(3); clf;
 axes(gca);
@@ -266,7 +265,7 @@ plot(t,v_tq,"LineWidth",1.5); hold on
 grid on;
 xlim([24 30]);
 ylim([0.8 1.05]);
-xlabel("tiempo [s]");
+%xlabel("tiempo [s]");
 ylabel('$V_t$ [pu]');
 
 %----------------- figura 4 ---------------------
@@ -277,10 +276,11 @@ plot(t, w, 'LineWidth',1.5);
 grid on;
 xlim([24 30]);
 ylim([0.99 1.005]);
-xlabel("tiempo [s]");
+%xlabel("tiempo [s]");
 ylabel('$W_r$ [pu]');
 
 %----------------- figura 5 ---------------------
+fig_w = 5.5; fig_h = 2;
 f5 = figure(5); clf
 axes(gca);
 set(f5,'Units','inches','Position',[1 1 fig_w fig_h],'PaperPositionMode','auto');
@@ -400,9 +400,9 @@ plot(x1_vtsin, h1_vtsin, '--r', 'LineWidth', 0.75)
 yline(h1_vtsin(1),'--',sprintf('h = %.4f', h1_vtsin(1)), ...
     'LabelHorizontalAlignment','left','LabelVerticalAlignment','top',"Color","k","FontName","Times New Roman","FontSize",10);
 xlim([24.9 25.5]);
-ylim([-0.1 0.45]);
+ylim([-0.05 0.41]);
 
-xlabel("tiempo [s]");
+%xlabel("tiempo [s]");
 ylabel('$v_t \sin(\delta)$ [pu]');
 
 t0 = 24.99;   % inicio del zoom
@@ -430,6 +430,7 @@ xlim(ax_inset, [t0 t1]);
 ylim(ax_inset, [ymin ymax]);
 
 %----------------- figura 7 ---------------------
+fig_w = 5.5; fig_h = 1.2;
 f7 = figure(7); clf
 axes(gca);
 set(f7,'Units','inches','Position',[1 1 fig_w fig_h],'PaperPositionMode','auto');
@@ -439,7 +440,7 @@ yline(0.9342,'--',sprintf('v_tcos(\\delta_0) = %.4f', 0.9342), ...
     'LabelHorizontalAlignment','left','LabelVerticalAlignment','bottom',"Color","k","FontName","Times New Roman","FontSize",10);
 xlim([24.9 25.5]);
 ylim([10^(-0.1) 10^(0.15)]);
-xlabel("tiempo [s]");
+%xlabel("tiempo [s]");
 ylabel('$v_t \cos(\delta)$ [pu]');
 
 %----------------- figura 8 ---------------------
@@ -452,7 +453,7 @@ yline(20.8946,'--',sprintf('\\delta_0 = %.4f', 20.8946), ...
     'LabelHorizontalAlignment','left','LabelVerticalAlignment','top',"Color","k","FontName","Times New Roman","FontSize",10);
 %h.LineStyle = 'none'; 
 xlim([24.9 25.5]);
-ylim([-10 30]);
+ylim([-0.8 32]);
 xlabel("tiempo [s]");
 ylabel('$\delta(^\circ)$');
 
