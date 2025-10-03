@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1759454070.37979 "g:/Mi unidad/2. Segundo Semestre/3. Análisis de Estabilidad Dinámica en Redes Eléctricas de Gran Tamaño/Tareas/esta_tarea2/Trabajo/hw_2_barocio.tex" "build/hw_2_barocio.pdf" "hw_2_barocio" 1759454072.58444 0
+["pdflatex"] 1759514488.75608 "g:/Mi unidad/2. Segundo Semestre/3. Análisis de Estabilidad Dinámica en Redes Eléctricas de Gran Tamaño/Tareas/esta_tarea2/Trabajo/hw_2_barocio.tex" "build/hw_2_barocio.pdf" "hw_2_barocio" 1759514490.80285 0
   "C:/Users/alumn/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1759184908 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/alumn/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1738786947 24225045 21ef95abcdbbd61c78902ffc185618d3 ""
   "C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -132,10 +132,10 @@
   "Fig/fig7.pdf" 1759255233 34966 4d81c2f803628133f11e399acfded91e ""
   "Fig/fig8.pdf" 1759255233 32766 d8155e02a1975233702f1a7f4a247742 ""
   "IEEEtran.cls" 1759186177 288304 5b2e4fa15b0f7eabb840ebf67df4c0f7 ""
-  "build/hw_2_barocio.aux" 1759454072 4783 3bb143f5be784e6c37288dd8d02f3cfe "pdflatex"
-  "build/hw_2_barocio.out" 1759454072 3076 18944dd455034405c91edeac5f919019 "pdflatex"
-  "g:/Mi unidad/2. Segundo Semestre/3. Análisis de Estabilidad Dinámica en Redes Eléctricas de Gran Tamaño/Tareas/esta_tarea2/Trabajo/hw_2_barocio.tex" 1759454069 18480 25953af8d92904f3e259636aad75d315 ""
-  "hw_2_barocio.tex" 1759454069 18480 25953af8d92904f3e259636aad75d315 ""
+  "build/hw_2_barocio.aux" 1759514490 4783 3bb143f5be784e6c37288dd8d02f3cfe "pdflatex"
+  "build/hw_2_barocio.out" 1759514490 3076 18944dd455034405c91edeac5f919019 "pdflatex"
+  "g:/Mi unidad/2. Segundo Semestre/3. Análisis de Estabilidad Dinámica en Redes Eléctricas de Gran Tamaño/Tareas/esta_tarea2/Trabajo/hw_2_barocio.tex" 1759514488 18436 4b4778225054150c07fd09690e06e3b0 ""
+  "hw_2_barocio.tex" 1759514488 18436 4b4778225054150c07fd09690e06e3b0 ""
   (generated)
   "build/hw_2_barocio.aux"
   "build/hw_2_barocio.log"

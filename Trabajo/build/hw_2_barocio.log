@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.2.5)  2 OCT 2025 19:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.2.5)  3 OCT 2025 12:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -560,7 +560,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 ]
 
 pdfTeX warning: pdflatex (file ./Fig/Modelo_Simulink.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Fig/Modelo_Simulink.pdf, id=75, 1047.915pt x 307.90031pt>
+<Fig/Modelo_Simulink.pdf, id=76, 1047.915pt x 307.90031pt>
 File: Fig/Modelo_Simulink.pdf Graphic file (type pdf)
 <use Fig/Modelo_Simulink.pdf>
 Package pdftex.def Info: Fig/Modelo_Simulink.pdf  used on input line 123.
@@ -573,12 +573,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 128.
 
-<Fig/fig1.pdf, id=77, 348.30125pt x 137.51375pt>
+<Fig/fig1.pdf, id=78, 348.30125pt x 137.51375pt>
 File: Fig/fig1.pdf Graphic file (type pdf)
 <use Fig/fig1.pdf>
 Package pdftex.def Info: Fig/fig1.pdf  used on input line 138.
 (pdftex.def)             Requested size: 252.0pt x 99.49242pt.
-<Fig/fig2.pdf, id=82, 353.32pt x 140.525pt>
+<Fig/fig2.pdf, id=83, 353.32pt x 140.525pt>
 File: Fig/fig2.pdf Graphic file (type pdf)
 <use Fig/fig2.pdf>
 Package pdftex.def Info: Fig/fig2.pdf  used on input line 160.
@@ -591,17 +591,17 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 165.
 
-<Fig/fig3.pdf, id=84, 339.2675pt x 81.30376pt>
+<Fig/fig3.pdf, id=85, 339.2675pt x 81.30376pt>
 File: Fig/fig3.pdf Graphic file (type pdf)
 <use Fig/fig3.pdf>
 Package pdftex.def Info: Fig/fig3.pdf  used on input line 175.
 (pdftex.def)             Requested size: 252.0pt x 60.3896pt.
-<Fig/fig4.pdf, id=85, 347.2975pt x 83.31125pt>
+<Fig/fig4.pdf, id=86, 347.2975pt x 83.31125pt>
 File: Fig/fig4.pdf Graphic file (type pdf)
 <use Fig/fig4.pdf>
 Package pdftex.def Info: Fig/fig4.pdf  used on input line 182.
 (pdftex.def)             Requested size: 252.0pt x 60.45313pt.
-<Fig/fig5.pdf, id=86, 346.29375pt x 137.51375pt>
+<Fig/fig5.pdf, id=87, 346.29375pt x 137.51375pt>
 File: Fig/fig5.pdf Graphic file (type pdf)
 <use Fig/fig5.pdf>
 Package pdftex.def Info: Fig/fig5.pdf  used on input line 189.
@@ -698,7 +698,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  94i,14n,107p,798b,458s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/alumn/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "g:\Mi unidad\2. Segundo Semestre\3. Análisis de Estabilidad Dinámica en Redes Eléctricas de Gran Tamaño\Tareas\esta_tarea2\Trabajo\build\hw_2_barocio.pdf" (4 pages, 513187 bytes).
+Output written on "g:\Mi unidad\2. Segundo Semestre\3. Análisis de Estabilidad Dinámica en Redes Eléctricas de Gran Tamaño\Tareas\esta_tarea2\Trabajo\build\hw_2_barocio.pdf" (4 pages, 513204 bytes).
 PDF statistics:
  414 PDF objects out of 1000 (max. 8388607)
  36 named destinations out of 1000 (max. 500000)
